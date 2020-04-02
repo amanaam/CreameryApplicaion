@@ -1,0 +1,77 @@
+<h4>Store Details</h4>
+<table border = 0 >
+<tr><td>
+  <b>Name:</b></td><td>
+  <%= "#{@store.name} Store" %>
+</td></tr>
+
+<tr><td>
+  <b>Address:</b></td><td>
+  <%= @store.street + ", " + @store.city + ", " + @store.state + " " + @store.zip %>
+</td></tr>
+
+<tr><td>
+  <b>Phone:</b></td><td>
+  <%= @store.phone.insert(3, '-').insert(7, '-') %>
+</td></tr>
+
+<tr><td>
+  <b>Active:</b></td><td>
+  <%= (@store.active ? "Yes" : "No") %>
+</td></tr>
+</table>
+
+<br>
+<br>
+<div style="background-color:white">
+<h4>Working Manager(s)</h4>
+<% if (@store.active?) %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Employee Name</th>
+        <th>Phone Number</th>
+        <th></th>
+    </tr>
+    
+    <% @current_managers.each do |employee| %>
+    <tr>
+        <td><%= link_to employee.proper_name, employee_path(employee) %></td>
+        <td><%= employee.phone.insert(3, '-').insert(7, '-') %></td>
+        <td><%= link_to 'Edit' , edit_employee_path(employee), :class=> "waves-effect waves-light btn #001e00" %></td>
+    </tr>
+    <% end %>
+</table>
+<% else %>
+<h6>n/a</h6>
+<% end %>
+</div>
+<br>
+<br>
+<div style="background-color:white">
+<h4>Current Employees</h4>
+<% if (@store.active?) %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Employee Name</th>
+        <th>Phone Number</th>
+        <th></th>
+    </tr>
+    
+    <% @current_employees.each do |employee| %>
+    <tr>
+        <td><%= link_to employee.name, employee_path(employee) %></td>
+        <td><%= employee.phone.insert(3, '-').insert(7, '-') %></td>
+        <td><%= link_to 'Edit' , edit_employee_path(employee), :class=> "waves-effect waves-light btn #001e00" %></td>
+    </tr>
+    <% end %>
+</table>
+<% else %>
+<h6>There are no employees assigned at this time.</h6>
+<% end %>
+</div>
+<br>
+<br>
+
+
+<%= link_to 'Edit', edit_store_path(@store), :class=> "waves-effect waves-light btn #001e00"%> |
+<%= link_to 'Back', stores_path, :class=> "waves-effect waves-light btn #001e00" %>

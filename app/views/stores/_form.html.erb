@@ -1,0 +1,21 @@
+<%= simple_form_for(@store) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="form-inputs">
+      <%= f.input :name, label_html: { class: 'active' } %>
+      <%= f.input :street, label_html: { class: 'active' } %>
+      <%= f.input :city, label_html: { class: 'active' } %>
+      <%= f.input :state, collection: ['PA', 'OH', 'WV'] %>
+      <%= f.input :zip, label_html: { class: 'active' } %>
+      <%= f.input :phone, label_html: { class: 'active' } %>
+      <%= f.input :active, as: :boolean, boolean_style: :inline%>    </div>
+  </div>
+  <div class="row">
+    <div class="form-actions col s8">
+      <%= f.submit :class=>"btn waves-effect waves-light" %>
+      <%= link_to 'Cancel', employees_path, :class => 'waves-effect waves-light btn red' %>
+    </div>
+  </div>
+<% end %>
+            
+            

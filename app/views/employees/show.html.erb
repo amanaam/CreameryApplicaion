@@ -1,0 +1,83 @@
+<h4>Employee Details</h4>
+<table class="striped" border = 1>
+<tr><td>
+  <b>Name:</b></td><td>
+  <%= @employee.proper_name %>
+</td></tr>
+
+<tr><td>
+  <b>Social Security Number:</b></td><td>
+  <%= @employee.ssn.insert(3, '-').insert(6, '-') %>
+</td></tr>
+
+<tr><td>
+  <b>Date of Birth:</b></td><td>
+  <%= @employee.date_of_birth.strftime('%b %d, %Y') %>
+</td></tr>
+
+<tr><td>
+  <b>Phone:</b></td><td>
+  <%= @employee.phone.insert(3, '-').insert(7, '-') %>
+</td></tr>
+
+<tr><td>
+  <b>Role:</b></td><td>
+  <%= @employee.role.capitalize %>
+</td></tr>
+
+<tr><td>
+  <b>Active with AMC:</b></td><td>
+  <%= (@employee.active ? "Yes" : "No")%>
+</td></tr>
+</table>
+<br>
+<br>
+<div style="background-color:white">
+<h5>Current Assignment</h5>
+<% if (@current_assignment == nil) %>
+<h6>n/a</h6>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Store Name</th>
+        <th>Started</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><%= ( @employee.current_assignment == nil ? " " : @employee.current_assignment.store.name ) %></td>
+        <td><%= ( @employee.current_assignment == nil ? " " : "since #{@employee.current_assignment.start_date.strftime('%b %d, %Y')}") %></td>
+    </tr>
+</table>
+<% end %>
+</div>
+<br>
+<br>
+<div style="background-color:white">
+
+<% if (@previous_assignments).empty? %>
+<br>
+<% else %>
+<h5>Previous Assignments</h5>
+<table class="striped" border = 1>
+    <tr>
+        <th>Store Name</th>
+        <th>Dates</th>
+    </tr>
+    
+    <% @previous_assignments.each do |assignment| %>
+    <tr>
+        <td><%= link_to assignment.store.name, store_path(assignment.store) %></td>
+        <td><%= "#{assignment.start_date.strftime('%-m/%-d/%y')} - #{assignment.end_date.strftime('%-m/%-d/%y')}" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+</div>
+<br>
+<br>
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>
+
+
+

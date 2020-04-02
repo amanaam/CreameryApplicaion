@@ -12,3 +12,13 @@
  *
  *= require_self
  */
+$table-striped-color: #cfd8dc;
+$primary-color: #001e00;
+$button-height: 26px;
+$font: Helvetica;
+@import "materialize";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+#toast-container {
+  left:1%;
+  right: auto !important;
+}

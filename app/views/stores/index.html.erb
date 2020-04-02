@@ -1,0 +1,54 @@
+<h4>Active Stores</h4>
+<% if (@active_stores).empty? %>
+<h6>There are no active stores at this time.</h6>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Store Name</th>
+        <th>Phone Number</th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @active_stores.each do |store| %>
+    <tr>
+        <td><%= link_to store.name, store_path(store) %></td>
+        <td><%= store.phone.insert(3, '-').insert(7, '-') %></td>
+        <td><%= link_to 'Edit' , edit_store_path(store), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= link_to 'Current Assignments' , store_path(store), :class=> "waves-effect waves-light btn #001e00" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @active_stores, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+
+<br>
+
+<h4>Inactive Stores</h4>
+<% if (@inactive_stores).empty? %>
+<h6>All stores are active.</h6>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Store Name</th>
+        <th>Phone Number</th>
+        <th></th>
+    </tr>
+    
+    <% @inactive_stores.each do |store| %>
+    <tr>
+        <td><%= link_to store.name, store_path(store) %></td>
+        <td><%= store.phone.insert(3, '-').insert(7, '-') %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @inactive_stores, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+
+    

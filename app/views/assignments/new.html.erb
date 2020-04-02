@@ -1,0 +1,17 @@
+<%= simple_form_for(@assignment) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="form-inputs">
+      <%= f.input :store_id, collection: Store.alphabetical.active %>
+      <%= f.input :employee_id, collection: Employee.alphabetical.active %>
+      <%= f.input :start_date, label_html: { class: 'active' } %>
+      <%= f.input :end_date, label_html: { class: 'active' }, include_blank: true  %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-actions col s8">
+      <%= f.submit :class=>"btn waves-effect waves-light" %>
+      <%= link_to 'Cancel', employees_path, :class => 'waves-effect waves-light btn red' %>
+    </div>
+  </div>
+<% end %>

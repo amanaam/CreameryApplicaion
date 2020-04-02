@@ -39,6 +39,7 @@ class AssignmentsControllerTest < ActionDispatch::IntegrationTest
     assert_nil @assignment.end_date
     patch terminate_assignment_path(@assignment)
     @assignment.reload
+    puts @assignment.end_date
     assert_equal Date.current, @assignment.end_date
     assert_redirected_to assignments_path
   end
