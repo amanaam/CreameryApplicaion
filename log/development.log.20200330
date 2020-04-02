@@ -1,0 +1,1657 @@
+# Logfile created on 2020-03-30 17:28:08 +0000 by logger.rb/v1.4.2
+I, [2020-03-30T17:28:08.275258 #23137]  INFO -- : Started GET "/" for 103.104.215.14 at 2020-03-30 17:28:08 +0000
+I, [2020-03-30T17:28:08.280525 #23137]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2020-03-30T17:28:08.301041 #23137] FATAL -- :   
+F, [2020-03-30T17:28:08.301210 #23137] FATAL -- : ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+F, [2020-03-30T17:28:08.301984 #23137] FATAL -- :   
+F, [2020-03-30T17:28:08.302866 #23137] FATAL -- : activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+better_errors (2.6.0) lib/better_errors/middleware.rb:59:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2020-03-30T17:28:08.356662 #23137]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2020-03-30T17:28:08.380761 #23137]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T17:28:08.382578 #23137]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.7ms)
+I, [2020-03-30T17:28:08.400426 #23137]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T17:28:08.401605 #23137]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+I, [2020-03-30T17:28:08.417401 #23137]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T17:28:08.418227 #23137]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2020-03-30T17:28:08.418439 #23137]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.7ms)
+D, [2020-03-30T17:28:47.020778 #23287] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-03-30T17:28:47.021032 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.028830 #23287] DEBUG -- :   [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+D, [2020-03-30T17:28:47.029224 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.036444 #23287] DEBUG -- :   [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2020-03-30T17:28:47.036818 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.062812 #23287] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T17:28:47.063057 #23287] DEBUG -- :   ↳ bin/rails:9
+I, [2020-03-30T17:28:47.063375 #23287]  INFO -- : Migrating to CreateEmployees (20191101135643)
+D, [2020-03-30T17:28:47.068312 #23287] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T17:28:47.068469 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.070128 #23287] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "employees" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "ssn" varchar, "date_of_birth" date, "phone" varchar, "role" varchar, "active" boolean)[0m
+D, [2020-03-30T17:28:47.070754 #23287] DEBUG -- :   ↳ db/migrate/20191101135643_create_employees.rb:3
+D, [2020-03-30T17:28:47.088918 #23287] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191101135643"]]
+D, [2020-03-30T17:28:47.089223 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.095477 #23287] DEBUG -- :   [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T17:28:47.095680 #23287] DEBUG -- :   ↳ bin/rails:9
+I, [2020-03-30T17:28:47.096099 #23287]  INFO -- : Migrating to CreateStores (20191101140046)
+D, [2020-03-30T17:28:47.097366 #23287] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T17:28:47.097550 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.098779 #23287] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "stores" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "street" varchar, "city" varchar, "state" varchar, "zip" varchar, "phone" varchar, "active" boolean)[0m
+D, [2020-03-30T17:28:47.099127 #23287] DEBUG -- :   ↳ db/migrate/20191101140046_create_stores.rb:3
+D, [2020-03-30T17:28:47.100300 #23287] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191101140046"]]
+D, [2020-03-30T17:28:47.100494 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.105592 #23287] DEBUG -- :   [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T17:28:47.105899 #23287] DEBUG -- :   ↳ bin/rails:9
+I, [2020-03-30T17:28:47.106334 #23287]  INFO -- : Migrating to CreateAssignments (20191101143940)
+D, [2020-03-30T17:28:47.107670 #23287] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T17:28:47.107965 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.109567 #23287] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "assignments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date, "end_date" date, CONSTRAINT "fk_rails_75f2a1d3e5"
+FOREIGN KEY ("store_id")
+  REFERENCES "stores" ("id")
+, CONSTRAINT "fk_rails_d0980e430f"
+FOREIGN KEY ("employee_id")
+  REFERENCES "employees" ("id")
+)[0m
+D, [2020-03-30T17:28:47.109863 #23287] DEBUG -- :   ↳ db/migrate/20191101143940_create_assignments.rb:3
+D, [2020-03-30T17:28:47.111581 #23287] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_store_id" ON "assignments" ("store_id")[0m
+D, [2020-03-30T17:28:47.111774 #23287] DEBUG -- :   ↳ db/migrate/20191101143940_create_assignments.rb:3
+D, [2020-03-30T17:28:47.114449 #23287] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_employee_id" ON "assignments" ("employee_id")[0m
+D, [2020-03-30T17:28:47.114638 #23287] DEBUG -- :   ↳ db/migrate/20191101143940_create_assignments.rb:3
+D, [2020-03-30T17:28:47.115975 #23287] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191101143940"]]
+D, [2020-03-30T17:28:47.116340 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.121985 #23287] DEBUG -- :   [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T17:28:47.122398 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.129866 #23287] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-03-30T17:28:47.130225 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.138006 #23287] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T17:28:47.138319 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.140409 #23287] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-30 17:28:47.139175"], ["updated_at", "2020-03-30 17:28:47.139175"]]
+D, [2020-03-30T17:28:47.140737 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.146167 #23287] DEBUG -- :   [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T17:28:47.146576 #23287] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T17:28:47.148597 #23287] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T17:28:47.148914 #23287] DEBUG -- :   ↳ bin/rails:9
+I, [2020-03-30T17:29:03.022149 #23341]  INFO -- : Started GET "/" for 103.104.215.14 at 2020-03-30 17:29:03 +0000
+I, [2020-03-30T17:29:03.023021 #23341]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2020-03-30T17:29:03.032134 #23341] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T17:29:03.032284 #23341] DEBUG -- :   ↳ /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+I, [2020-03-30T17:29:03.059634 #23341]  INFO -- : Processing by Rails::WelcomeController#index as HTML
+I, [2020-03-30T17:29:03.067592 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+I, [2020-03-30T17:29:03.070209 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+I, [2020-03-30T17:29:03.071551 #23341]  INFO -- : Completed 200 OK in 12ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T17:29:10.805442 #23341]  INFO -- : Started GET "/Store" for 103.104.215.14 at 2020-03-30 17:29:10 +0000
+I, [2020-03-30T17:29:10.806447 #23341]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2020-03-30T17:29:10.808477 #23341] FATAL -- :   
+F, [2020-03-30T17:29:10.808634 #23341] FATAL -- : ActionController::RoutingError (No route matches [GET] "/Store"):
+F, [2020-03-30T17:29:10.808805 #23341] FATAL -- :   
+F, [2020-03-30T17:29:10.809022 #23341] FATAL -- : actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2020-03-30T17:29:10.842811 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2020-03-30T17:29:10.859661 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T17:29:10.860997 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+I, [2020-03-30T17:29:10.885545 #23341]  INFO -- :   Rendered collection of /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (7.0ms)
+I, [2020-03-30T17:29:10.910056 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms)
+I, [2020-03-30T17:29:10.923615 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T17:29:10.924690 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2020-03-30T17:29:10.924919 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.9ms)
+I, [2020-03-30T17:29:19.092660 #23341]  INFO -- : Started GET "/Stores" for 103.104.215.14 at 2020-03-30 17:29:19 +0000
+I, [2020-03-30T17:29:19.093379 #23341]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2020-03-30T17:29:19.094745 #23341] FATAL -- :   
+F, [2020-03-30T17:29:19.094865 #23341] FATAL -- : ActionController::RoutingError (No route matches [GET] "/Stores"):
+F, [2020-03-30T17:29:19.094967 #23341] FATAL -- :   
+F, [2020-03-30T17:29:19.095101 #23341] FATAL -- : actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2020-03-30T17:29:19.119874 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2020-03-30T17:29:19.134019 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T17:29:19.135368 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+I, [2020-03-30T17:29:19.151649 #23341]  INFO -- :   Rendered collection of /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (3.9ms)
+I, [2020-03-30T17:29:19.164069 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+I, [2020-03-30T17:29:19.176759 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T17:29:19.177823 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T17:29:19.178045 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.0ms)
+I, [2020-03-30T17:29:25.362933 #23341]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 17:29:25 +0000
+I, [2020-03-30T17:29:25.364275 #23341]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2020-03-30T17:29:25.366648 #23341] FATAL -- :   
+F, [2020-03-30T17:29:25.366960 #23341] FATAL -- : ActionController::RoutingError (No route matches [GET] "/stores"):
+F, [2020-03-30T17:29:25.367255 #23341] FATAL -- :   
+F, [2020-03-30T17:29:25.367487 #23341] FATAL -- : actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2020-03-30T17:29:25.411096 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2020-03-30T17:29:25.433089 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T17:29:25.434813 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2020-03-30T17:29:25.458964 #23341]  INFO -- :   Rendered collection of /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (5.4ms)
+I, [2020-03-30T17:29:25.475340 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+I, [2020-03-30T17:29:25.490520 #23341]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T17:29:25.491624 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2020-03-30T17:29:25.491881 #23341]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.6ms)
+I, [2020-03-30T17:29:42.626120 #23341]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 17:29:42 +0000
+I, [2020-03-30T17:29:42.627464 #23341]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T17:29:42.658455 #23341]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T17:29:42.663235 #23341]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+I, [2020-03-30T17:29:42.664294 #23341]  INFO -- :   Rendered stores/index.html.erb within layouts/application (0.6ms)
+I, [2020-03-30T17:29:42.666665 #23341]  INFO -- : Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T17:29:54.508127 #23341]  INFO -- : Started GET "/stores/edit" for 103.104.215.14 at 2020-03-30 17:29:54 +0000
+I, [2020-03-30T17:29:54.509444 #23341]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T17:29:54.511733 #23341]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T17:29:54.516438 #23341]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T17:29:54.517460 #23341]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (0.5ms)
+I, [2020-03-30T17:29:54.520009 #23341]  INFO -- : Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T18:04:37.202672 #25823]  INFO -- : Started GET "/" for 103.104.215.14 at 2020-03-30 18:04:37 +0000
+I, [2020-03-30T18:04:37.204500 #25823]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2020-03-30T18:04:37.226602 #25823] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T18:04:37.227481 #25823] DEBUG -- :   ↳ /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+I, [2020-03-30T18:04:37.270340 #25823]  INFO -- : Processing by Rails::WelcomeController#index as HTML
+I, [2020-03-30T18:04:37.284117 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+I, [2020-03-30T18:04:37.287930 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+I, [2020-03-30T18:04:37.289931 #25823]  INFO -- : Completed 200 OK in 19ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T18:04:37.621197 #25823]  INFO -- : Started GET "/" for 103.104.215.14 at 2020-03-30 18:04:37 +0000
+I, [2020-03-30T18:04:37.622782 #25823]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:04:37.625036 #25823]  INFO -- : Processing by Rails::WelcomeController#index as HTML
+I, [2020-03-30T18:04:37.631054 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+I, [2020-03-30T18:04:37.635536 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+I, [2020-03-30T18:04:37.637446 #25823]  INFO -- : Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T18:04:41.902644 #25823]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 18:04:41 +0000
+I, [2020-03-30T18:04:41.903312 #25823]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2020-03-30T18:04:41.904649 #25823] FATAL -- :   
+F, [2020-03-30T18:04:41.904766 #25823] FATAL -- : ActionController::RoutingError (No route matches [GET] "/stores"):
+F, [2020-03-30T18:04:41.904872 #25823] FATAL -- :   
+F, [2020-03-30T18:04:41.904999 #25823] FATAL -- : actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2020-03-30T18:04:41.955730 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2020-03-30T18:04:41.976803 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:04:41.978346 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2020-03-30T18:04:42.004661 #25823]  INFO -- :   Rendered collection of /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (8.4ms)
+I, [2020-03-30T18:04:42.026958 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.2ms)
+I, [2020-03-30T18:04:42.054719 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:04:42.056455 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2020-03-30T18:04:42.056916 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.9ms)
+I, [2020-03-30T18:04:47.005024 #25823]  INFO -- : Started GET "/stores/" for 103.104.215.14 at 2020-03-30 18:04:47 +0000
+I, [2020-03-30T18:04:47.006276 #25823]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2020-03-30T18:04:47.008293 #25823] FATAL -- :   
+F, [2020-03-30T18:04:47.008504 #25823] FATAL -- : ActionController::RoutingError (No route matches [GET] "/stores"):
+F, [2020-03-30T18:04:47.008705 #25823] FATAL -- :   
+F, [2020-03-30T18:04:47.008924 #25823] FATAL -- : actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2020-03-30T18:04:47.050719 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2020-03-30T18:04:47.073469 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:04:47.075065 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2020-03-30T18:04:47.100415 #25823]  INFO -- :   Rendered collection of /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (5.3ms)
+I, [2020-03-30T18:04:47.118040 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+I, [2020-03-30T18:04:47.133454 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:04:47.134736 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2020-03-30T18:04:47.134999 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.1ms)
+I, [2020-03-30T18:04:56.230092 #25823]  INFO -- : Started GET "/stores//index" for 103.104.215.14 at 2020-03-30 18:04:56 +0000
+I, [2020-03-30T18:04:56.232085 #25823]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:04:56.240558 #25823]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T18:04:56.260544 #25823]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+I, [2020-03-30T18:04:56.263880 #25823]  INFO -- :   Rendered stores/index.html.erb within layouts/application (3.0ms)
+I, [2020-03-30T18:04:56.265337 #25823]  INFO -- : Completed 500  in 24ms (ActiveRecord: 0.5ms)
+
+
+F, [2020-03-30T18:04:56.269013 #25823] FATAL -- :   
+F, [2020-03-30T18:04:56.269158 #25823] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:04:56.269503 #25823] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% @store.each do |store| %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:04:56.269658 #25823] FATAL -- :   
+F, [2020-03-30T18:04:56.269798 #25823] FATAL -- : app/views/stores/index.html.erb:9:in `_app_views_stores_index_html_erb___1854732232503249510_21020'
+I, [2020-03-30T18:04:56.423210 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:04:56.446049 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:04:56.450867 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+I, [2020-03-30T18:04:56.470884 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:04:56.473079 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2020-03-30T18:04:56.490499 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:04:56.491620 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2020-03-30T18:04:56.491961 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.5ms)
+I, [2020-03-30T18:04:59.586774 #25823]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:04:59 +0000
+I, [2020-03-30T18:04:59.588936 #25823]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:04:59.591908 #25823]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T18:04:59.598768 #25823]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+I, [2020-03-30T18:04:59.603959 #25823]  INFO -- :   Rendered stores/index.html.erb within layouts/application (4.7ms)
+I, [2020-03-30T18:04:59.607243 #25823]  INFO -- : Completed 500  in 14ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:04:59.612652 #25823] FATAL -- :   
+F, [2020-03-30T18:04:59.612920 #25823] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:04:59.613501 #25823] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% @store.each do |store| %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:04:59.613884 #25823] FATAL -- :   
+F, [2020-03-30T18:04:59.614238 #25823] FATAL -- : app/views/stores/index.html.erb:9:in `_app_views_stores_index_html_erb___1854732232503249510_21380'
+I, [2020-03-30T18:04:59.730741 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:04:59.744212 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:04:59.747775 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+I, [2020-03-30T18:04:59.760168 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:04:59.761852 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2020-03-30T18:04:59.774695 #25823]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:04:59.775558 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2020-03-30T18:04:59.775814 #25823]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.9ms)
+I, [2020-03-30T18:05:34.603234 #25823]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:05:34 +0000
+I, [2020-03-30T18:05:34.604213 #25823]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:05:34.605746 #25823]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T18:05:34.609497 #25823]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T18:05:34.636500 #25823] DEBUG -- :   [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name LIMIT ? OFFSET ?[0m  [["active", 1], ["LIMIT", 10], ["OFFSET", 0]]
+D, [2020-03-30T18:05:34.637015 #25823] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T18:05:34.638186 #25823]  INFO -- :   Rendered stores/index.html.erb within layouts/application (28.3ms)
+I, [2020-03-30T18:05:34.640103 #25823]  INFO -- : Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+D, [2020-03-30T18:08:27.097431 #26633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T18:08:27.097918 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:27.102296 #26633] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+D, [2020-03-30T18:08:27.102401 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:27.104929 #26633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T18:08:27.105217 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:27.107150 #26633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+D, [2020-03-30T18:08:27.107472 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:27.109606 #26633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T18:08:27.109990 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:27.111951 #26633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+D, [2020-03-30T18:08:27.114291 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:27.137259 #26633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "assignments"[0m
+D, [2020-03-30T18:08:27.153936 #26633] DEBUG -- :   ↳ db/schema.rb:15
+D, [2020-03-30T18:08:27.154781 #26633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-03-30T18:08:27.154940 #26633] DEBUG -- :   ↳ db/schema.rb:15
+D, [2020-03-30T18:08:27.163922 #26633] DEBUG -- :   [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "assignments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date, "end_date" date)[0m
+D, [2020-03-30T18:08:27.164226 #26633] DEBUG -- :   ↳ db/schema.rb:15
+D, [2020-03-30T18:08:27.171669 #26633] DEBUG -- :   [1m[35m (5.0ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_employee_id" ON "assignments" ("employee_id")[0m
+D, [2020-03-30T18:08:27.171941 #26633] DEBUG -- :   ↳ db/schema.rb:15
+D, [2020-03-30T18:08:27.181153 #26633] DEBUG -- :   [1m[35m (5.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_store_id" ON "assignments" ("store_id")[0m
+D, [2020-03-30T18:08:27.181419 #26633] DEBUG -- :   ↳ db/schema.rb:15
+D, [2020-03-30T18:08:27.182741 #26633] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "employees"[0m
+D, [2020-03-30T18:08:27.182996 #26633] DEBUG -- :   ↳ db/schema.rb:24
+D, [2020-03-30T18:08:27.189154 #26633] DEBUG -- :   [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "employees" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "ssn" varchar, "date_of_birth" date, "phone" varchar, "role" varchar, "active" boolean)[0m
+D, [2020-03-30T18:08:27.189433 #26633] DEBUG -- :   ↳ db/schema.rb:24
+D, [2020-03-30T18:08:27.190718 #26633] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "stores"[0m
+D, [2020-03-30T18:08:27.190965 #26633] DEBUG -- :   ↳ db/schema.rb:34
+D, [2020-03-30T18:08:27.197086 #26633] DEBUG -- :   [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "stores" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "street" varchar, "city" varchar, "state" varchar, "zip" varchar, "phone" varchar, "active" boolean)[0m
+D, [2020-03-30T18:08:27.197342 #26633] DEBUG -- :   ↳ db/schema.rb:34
+D, [2020-03-30T18:08:27.204362 #26633] DEBUG -- :   [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+D, [2020-03-30T18:08:27.204602 #26633] DEBUG -- :   ↳ db/schema.rb:13
+D, [2020-03-30T18:08:27.205960 #26633] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T18:08:27.206293 #26633] DEBUG -- :   ↳ db/schema.rb:13
+D, [2020-03-30T18:08:27.211162 #26633] DEBUG -- :   [1m[35m (3.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191101143940)[0m
+D, [2020-03-30T18:08:27.211603 #26633] DEBUG -- :   ↳ db/schema.rb:13
+D, [2020-03-30T18:08:27.215874 #26633] DEBUG -- :   [1m[35m (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191101135643),
+(20191101140046);
+
+[0m
+D, [2020-03-30T18:08:27.216160 #26633] DEBUG -- :   ↳ db/schema.rb:13
+D, [2020-03-30T18:08:27.222960 #26633] DEBUG -- :   [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2020-03-30T18:08:27.223349 #26633] DEBUG -- :   ↳ db/schema.rb:13
+D, [2020-03-30T18:08:27.224777 #26633] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-03-30T18:08:27.225200 #26633] DEBUG -- :   ↳ db/schema.rb:13
+D, [2020-03-30T18:08:27.231614 #26633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T18:08:27.231982 #26633] DEBUG -- :   ↳ db/schema.rb:13
+D, [2020-03-30T18:08:27.234128 #26633] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-30 18:08:27.233014"], ["updated_at", "2020-03-30 18:08:27.233014"]]
+D, [2020-03-30T18:08:27.234530 #26633] DEBUG -- :   ↳ db/schema.rb:13
+D, [2020-03-30T18:08:27.240001 #26633] DEBUG -- :   [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T18:08:27.240427 #26633] DEBUG -- :   ↳ db/schema.rb:13
+D, [2020-03-30T18:08:27.241767 #26633] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-03-30T18:08:27.242090 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:27.245142 #26633] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T18:08:27.245440 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:27.246805 #26633] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-03-30 18:08:27.246040"], ["key", "environment"]]
+D, [2020-03-30T18:08:27.247015 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:27.253080 #26633] DEBUG -- :   [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T18:08:27.253357 #26633] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:39.327637 #26691] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T18:08:39.328048 #26691] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:39.330542 #26691] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-03-30T18:08:39.330811 #26691] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:39.336240 #26691] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T18:08:39.336554 #26691] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:39.337583 #26691] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T18:08:39.337981 #26691] DEBUG -- :   ↳ bin/rails:9
+D, [2020-03-30T18:08:39.339548 #26691] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T18:08:39.342069 #26691] DEBUG -- :   ↳ bin/rails:9
+I, [2020-03-30T18:09:02.865453 #26742]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:09:02 +0000
+I, [2020-03-30T18:09:02.867275 #26742]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2020-03-30T18:09:02.886078 #26742] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T18:09:02.886278 #26742] DEBUG -- :   ↳ /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+I, [2020-03-30T18:09:02.898045 #26742]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T18:09:02.919628 #26742]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T18:09:02.922712 #26742] DEBUG -- :   [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name LIMIT ? OFFSET ?[0m  [["active", 1], ["LIMIT", 10], ["OFFSET", 0]]
+D, [2020-03-30T18:09:02.923169 #26742] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T18:09:02.924247 #26742]  INFO -- :   Rendered stores/index.html.erb within layouts/application (4.3ms)
+I, [2020-03-30T18:09:02.926208 #26742]  INFO -- : Completed 200 OK in 28ms (Views: 8.6ms | ActiveRecord: 0.7ms)
+
+
+I, [2020-03-30T18:23:18.321326 #27814]  INFO -- : Started GET "/" for 103.104.215.14 at 2020-03-30 18:23:18 +0000
+I, [2020-03-30T18:23:18.325514 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2020-03-30T18:23:18.340310 #27814] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T18:23:18.340521 #27814] DEBUG -- :   ↳ /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+I, [2020-03-30T18:23:18.372678 #27814]  INFO -- : Processing by Rails::WelcomeController#index as HTML
+I, [2020-03-30T18:23:18.382974 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+I, [2020-03-30T18:23:18.385824 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+I, [2020-03-30T18:23:18.387213 #27814]  INFO -- : Completed 200 OK in 14ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T18:23:18.680645 #27814]  INFO -- : Started GET "/" for 103.104.215.14 at 2020-03-30 18:23:18 +0000
+I, [2020-03-30T18:23:18.682016 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:23:18.684236 #27814]  INFO -- : Processing by Rails::WelcomeController#index as HTML
+I, [2020-03-30T18:23:18.690514 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+I, [2020-03-30T18:23:18.695226 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+I, [2020-03-30T18:23:18.697130 #27814]  INFO -- : Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T18:23:27.047233 #27814]  INFO -- : Started GET "/stores/edit" for 103.104.215.14 at 2020-03-30 18:23:27 +0000
+I, [2020-03-30T18:23:27.048673 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:23:27.056863 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T18:23:27.253184 #27814]  INFO -- : Completed 500  in 196ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:23:27.426069 #27814] FATAL -- :   
+F, [2020-03-30T18:23:27.527361 #27814] FATAL -- : NoMethodError (undefined method `set_store' for #<StoresController:0x00007f1cc0029278>
+Did you mean?  set_request!):
+F, [2020-03-30T18:23:27.527488 #27814] FATAL -- :   
+F, [2020-03-30T18:23:27.528047 #27814] FATAL -- : activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.3) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.3) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+better_errors (2.6.0) lib/better_errors/middleware.rb:59:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2020-03-30T18:23:27.625025 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2020-03-30T18:23:27.745748 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:23:27.748921 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+I, [2020-03-30T18:23:27.765315 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:23:27.767071 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2020-03-30T18:23:27.782524 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:23:27.783438 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2020-03-30T18:23:27.783683 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (158.5ms)
+I, [2020-03-30T18:25:07.169200 #27814]  INFO -- : Started GET "/stores/edit" for 103.104.215.14 at 2020-03-30 18:25:07 +0000
+I, [2020-03-30T18:25:07.170546 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:25:07.227084 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T18:25:07.622709 #27814]  INFO -- : Completed 500  in 395ms (ActiveRecord: 1.0ms)
+
+
+F, [2020-03-30T18:25:07.688388 #27814] FATAL -- :   
+F, [2020-03-30T18:25:07.688492 #27814] FATAL -- : ActiveRecord::RecordNotFound (Couldn't find Store without an ID):
+F, [2020-03-30T18:25:07.688573 #27814] FATAL -- :   
+F, [2020-03-30T18:25:07.688657 #27814] FATAL -- : app/controllers/stores_controller.rb:42:in `set_store'
+I, [2020-03-30T18:25:07.750836 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2020-03-30T18:25:07.765686 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:25:07.770482 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+I, [2020-03-30T18:25:07.784327 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:25:07.786673 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2020-03-30T18:25:07.799684 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:25:07.800708 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T18:25:07.800946 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.0ms)
+I, [2020-03-30T18:26:40.603667 #27814]  INFO -- : Started GET "/stores/edit" for 103.104.215.14 at 2020-03-30 18:26:40 +0000
+I, [2020-03-30T18:26:40.606394 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:26:40.609456 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T18:26:40.921073 #27814]  INFO -- : Completed 500  in 311ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:26:41.012316 #27814] FATAL -- :   
+F, [2020-03-30T18:26:41.012428 #27814] FATAL -- : ActiveRecord::RecordNotFound (Couldn't find Store without an ID):
+F, [2020-03-30T18:26:41.012581 #27814] FATAL -- :   
+F, [2020-03-30T18:26:41.012741 #27814] FATAL -- : app/controllers/stores_controller.rb:42:in `set_store'
+I, [2020-03-30T18:26:41.115935 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2020-03-30T18:26:41.129486 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:26:41.132607 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+I, [2020-03-30T18:26:41.145587 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:26:41.147281 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2020-03-30T18:26:41.160540 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:26:41.161485 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T18:26:41.161800 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.7ms)
+I, [2020-03-30T18:26:42.962077 #27814]  INFO -- : Started GET "/stores/edit" for 103.104.215.14 at 2020-03-30 18:26:42 +0000
+I, [2020-03-30T18:26:42.963964 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:26:43.037794 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T18:26:43.042640 #27814]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T18:26:43.046850 #27814]  INFO -- :   Rendered stores/_form.html.erb (2.3ms)
+I, [2020-03-30T18:26:43.047418 #27814]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (4.4ms)
+I, [2020-03-30T18:26:43.048980 #27814]  INFO -- : Completed 500  in 11ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:26:43.053521 #27814] FATAL -- :   
+F, [2020-03-30T18:26:43.053681 #27814] FATAL -- : ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+F, [2020-03-30T18:26:43.054075 #27814] FATAL -- :     1: <%= form_for(@store) do |f| %>
+    2:     <table border="0" cellspacing="5" cellpadding="5">
+    3:             <tr><td><%= f.input :name %></td></tr>
+    4:             <tr><td><%= f.input :street %></td></tr>
+F, [2020-03-30T18:26:43.054220 #27814] FATAL -- :   
+F, [2020-03-30T18:26:43.054385 #27814] FATAL -- : app/views/stores/_form.html.erb:1:in `_app_views_stores__form_html_erb___4014757065603702331_28660'
+app/views/stores/edit.html.erb:1:in `_app_views_stores_edit_html_erb__356751480976665182_28640'
+I, [2020-03-30T18:26:43.220473 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:26:43.235395 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:26:43.240794 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+I, [2020-03-30T18:26:43.255082 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:26:43.257829 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2020-03-30T18:26:43.272265 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:26:43.273653 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2020-03-30T18:26:43.273938 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.3ms)
+I, [2020-03-30T18:27:32.530384 #27814]  INFO -- : Started GET "/stores/new" for 103.104.215.14 at 2020-03-30 18:27:32 +0000
+I, [2020-03-30T18:27:32.531120 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:27:32.532392 #27814]  INFO -- : Processing by StoresController#new as HTML
+I, [2020-03-30T18:27:32.567909 #27814]  INFO -- :   Rendering stores/new.html.erb within layouts/application
+I, [2020-03-30T18:27:32.699844 #27814]  INFO -- :   Rendered stores/_form.html.erb (130.6ms)
+I, [2020-03-30T18:27:32.700258 #27814]  INFO -- :   Rendered stores/new.html.erb within layouts/application (132.1ms)
+I, [2020-03-30T18:27:32.701384 #27814]  INFO -- : Completed 500  in 169ms (ActiveRecord: 1.9ms)
+
+
+F, [2020-03-30T18:27:32.705126 #27814] FATAL -- :   
+F, [2020-03-30T18:27:32.705279 #27814] FATAL -- : ActionView::Template::Error (undefined method `stores_path' for #<#<Class:0x00007f1cc17a03e8>:0x00007f1cc071ccd8>
+Did you mean?  stores_new_path):
+F, [2020-03-30T18:27:32.705488 #27814] FATAL -- :     1: <%= form_for(@store) do |f| %>
+    2:     <table border="0" cellspacing="5" cellpadding="5">
+    3:             <tr><td><%= f.input :name %></td></tr>
+    4:             <tr><td><%= f.input :street %></td></tr>
+F, [2020-03-30T18:27:32.705592 #27814] FATAL -- :   
+F, [2020-03-30T18:27:32.705783 #27814] FATAL -- : app/views/stores/_form.html.erb:1:in `_app_views_stores__form_html_erb___4014757065603702331_29240'
+app/views/stores/new.html.erb:1:in `_app_views_stores_new_html_erb__4124175810429732519_29220'
+I, [2020-03-30T18:27:32.811555 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:27:32.826652 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:27:32.830690 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+I, [2020-03-30T18:27:32.844128 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:27:32.846090 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2020-03-30T18:27:32.859470 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:27:32.860416 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T18:27:32.860678 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.9ms)
+I, [2020-03-30T18:28:22.332748 #27814]  INFO -- : Started GET "/stores/new" for 103.104.215.14 at 2020-03-30 18:28:22 +0000
+I, [2020-03-30T18:28:22.333517 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:28:22.335841 #27814]  INFO -- : Processing by StoresController#new as HTML
+I, [2020-03-30T18:28:22.338532 #27814]  INFO -- :   Rendering stores/new.html.erb within layouts/application
+I, [2020-03-30T18:28:22.493428 #27814]  INFO -- :   Rendered stores/_form.html.erb (151.7ms)
+I, [2020-03-30T18:28:22.493957 #27814]  INFO -- :   Rendered stores/new.html.erb within layouts/application (155.2ms)
+I, [2020-03-30T18:28:22.495080 #27814]  INFO -- : Completed 500  in 159ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:28:22.498222 #27814] FATAL -- :   
+F, [2020-03-30T18:28:22.498395 #27814] FATAL -- : ActionView::Template::Error (undefined method `stores_path' for #<#<Class:0x00007f1cc17a03e8>:0x0000000003592d30>
+Did you mean?  stores_new_path):
+F, [2020-03-30T18:28:22.498649 #27814] FATAL -- :     1: <%= form_for @store do |f| %>
+    2:     <table border="0" cellspacing="5" cellpadding="5">
+    3:             <tr><td><%= f.input :name %></td></tr>
+    4:             <tr><td><%= f.input :street %></td></tr>
+F, [2020-03-30T18:28:22.498810 #27814] FATAL -- :   
+F, [2020-03-30T18:28:22.498984 #27814] FATAL -- : app/views/stores/_form.html.erb:1:in `_app_views_stores__form_html_erb___4014757065603702331_29720'
+app/views/stores/new.html.erb:1:in `_app_views_stores_new_html_erb__4124175810429732519_29700'
+I, [2020-03-30T18:28:22.601695 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:28:22.614893 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:28:22.618350 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+I, [2020-03-30T18:28:22.630919 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:28:22.632552 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2020-03-30T18:28:22.645387 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:28:22.646224 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2020-03-30T18:28:22.646454 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.6ms)
+I, [2020-03-30T18:28:48.097123 #27814]  INFO -- : Started GET "/stores/new" for 103.104.215.14 at 2020-03-30 18:28:48 +0000
+I, [2020-03-30T18:28:48.098482 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:28:48.100435 #27814]  INFO -- : Processing by StoresController#new as HTML
+I, [2020-03-30T18:28:48.105371 #27814]  INFO -- :   Rendering stores/new.html.erb within layouts/application
+I, [2020-03-30T18:28:48.110467 #27814]  INFO -- :   Rendered stores/_form.html.erb (2.9ms)
+I, [2020-03-30T18:28:48.111433 #27814]  INFO -- :   Rendered stores/new.html.erb within layouts/application (5.4ms)
+I, [2020-03-30T18:28:48.113566 #27814]  INFO -- : Completed 500  in 13ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:28:48.119544 #27814] FATAL -- :   
+F, [2020-03-30T18:28:48.119807 #27814] FATAL -- : ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+F, [2020-03-30T18:28:48.120243 #27814] FATAL -- :     1: <%= form_for @store_new do |f| %>
+    2:     <table border="0" cellspacing="5" cellpadding="5">
+    3:             <tr><td><%= f.input :name %></td></tr>
+    4:             <tr><td><%= f.input :street %></td></tr>
+F, [2020-03-30T18:28:48.120469 #27814] FATAL -- :   
+F, [2020-03-30T18:28:48.120797 #27814] FATAL -- : app/views/stores/_form.html.erb:1:in `_app_views_stores__form_html_erb___4014757065603702331_30180'
+app/views/stores/new.html.erb:1:in `_app_views_stores_new_html_erb__4124175810429732519_30160'
+I, [2020-03-30T18:28:48.259854 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:28:48.276462 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:28:48.279885 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+I, [2020-03-30T18:28:48.292240 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:28:48.293885 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2020-03-30T18:28:48.306371 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:28:48.307206 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2020-03-30T18:28:48.307424 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.4ms)
+I, [2020-03-30T18:29:16.735985 #27814]  INFO -- : Started GET "/stores/new" for 103.104.215.14 at 2020-03-30 18:29:16 +0000
+I, [2020-03-30T18:29:16.737157 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:29:16.739027 #27814]  INFO -- : Processing by StoresController#new as HTML
+I, [2020-03-30T18:29:16.743187 #27814]  INFO -- :   Rendering stores/new.html.erb within layouts/application
+I, [2020-03-30T18:29:16.995286 #27814]  INFO -- :   Rendered stores/_form.html.erb (250.0ms)
+I, [2020-03-30T18:29:16.995917 #27814]  INFO -- :   Rendered stores/new.html.erb within layouts/application (252.3ms)
+I, [2020-03-30T18:29:16.997532 #27814]  INFO -- : Completed 500  in 258ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:29:17.002743 #27814] FATAL -- :   
+F, [2020-03-30T18:29:17.002918 #27814] FATAL -- : ActionView::Template::Error (undefined method `stores_path' for #<#<Class:0x00007f1cc17a03e8>:0x0000000005787468>
+Did you mean?  stores_new_path):
+F, [2020-03-30T18:29:17.003203 #27814] FATAL -- :     1: <%= simple_form_for @store, :html => { :class => 'form-horizontal' } do |f| %>
+    2:  <legend><%= controller.action_name.capitalize %> Store</legend>
+    3:     <table border="0" cellspacing="5" cellpadding="5">
+    4:             <tr><td><%= f.input :name %></td></tr>
+F, [2020-03-30T18:29:17.003365 #27814] FATAL -- :   
+F, [2020-03-30T18:29:17.003535 #27814] FATAL -- : app/views/stores/_form.html.erb:1:in `_app_views_stores__form_html_erb___4014757065603702331_30620'
+app/views/stores/new.html.erb:1:in `_app_views_stores_new_html_erb__4124175810429732519_30600'
+I, [2020-03-30T18:29:17.202185 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:29:17.224402 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:29:17.230914 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+I, [2020-03-30T18:29:17.252769 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:29:17.255615 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+I, [2020-03-30T18:29:17.278326 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:29:17.279645 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2020-03-30T18:29:17.280027 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.6ms)
+I, [2020-03-30T18:34:01.816616 #27814]  INFO -- : Started GET "/stores/new" for 103.104.215.14 at 2020-03-30 18:34:01 +0000
+I, [2020-03-30T18:34:01.877016 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:34:03.985590 #27814]  INFO -- : Processing by StoresController#new as HTML
+I, [2020-03-30T18:34:04.387681 #27814]  INFO -- :   Rendering stores/new.html.erb within layouts/application
+I, [2020-03-30T18:34:06.015091 #27814]  INFO -- :   Rendered stores/_form.html.erb (1599.7ms)
+I, [2020-03-30T18:34:06.018346 #27814]  INFO -- :   Rendered stores/new.html.erb within layouts/application (1629.1ms)
+I, [2020-03-30T18:34:06.028399 #27814]  INFO -- : Completed 500  in 2040ms (ActiveRecord: 9.8ms)
+
+
+F, [2020-03-30T18:34:06.057175 #27814] FATAL -- :   
+F, [2020-03-30T18:34:06.058096 #27814] FATAL -- : ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007f1cc8139728>):
+F, [2020-03-30T18:34:06.060543 #27814] FATAL -- :     1: <%= form_for @store do |f| %>
+    2:     <table border="0" cellspacing="5" cellpadding="5">
+    3:             <tr><td><%= f.input :name %></td></tr>
+    4:             <tr><td><%= f.input :street %></td></tr>
+    5:             <tr><td><%= f.input :city %></td></tr>
+    6:             <tr><td><%= f.input :state %></td></tr>
+F, [2020-03-30T18:34:06.060882 #27814] FATAL -- :   
+F, [2020-03-30T18:34:06.061481 #27814] FATAL -- : app/views/stores/_form.html.erb:3:in `block in _app_views_stores__form_html_erb___4014757065603702331_33340'
+app/views/stores/_form.html.erb:1:in `_app_views_stores__form_html_erb___4014757065603702331_33340'
+app/views/stores/new.html.erb:1:in `_app_views_stores_new_html_erb__4124175810429732519_33320'
+I, [2020-03-30T18:34:06.323241 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:34:06.346698 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:34:06.352152 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+I, [2020-03-30T18:34:06.367634 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:34:06.371870 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+I, [2020-03-30T18:34:06.387576 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:34:06.389541 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+I, [2020-03-30T18:34:06.389882 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.4ms)
+I, [2020-03-30T18:38:38.051045 #27814]  INFO -- : Started GET "/stores/new" for 103.104.215.14 at 2020-03-30 18:38:38 +0000
+I, [2020-03-30T18:38:38.061926 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:38:38.082856 #27814]  INFO -- : Processing by StoresController#new as HTML
+I, [2020-03-30T18:38:38.104339 #27814]  INFO -- :   Rendering stores/new.html.erb within layouts/application
+I, [2020-03-30T18:38:41.962082 #27814]  INFO -- :   Rendered stores/_form.html.erb (3847.5ms)
+I, [2020-03-30T18:38:41.962993 #27814]  INFO -- :   Rendered stores/new.html.erb within layouts/application (3857.9ms)
+I, [2020-03-30T18:38:41.965359 #27814]  INFO -- : Completed 200 OK in 3881ms (Views: 3869.8ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T18:41:35.923663 #27814]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:41:35 +0000
+I, [2020-03-30T18:41:35.924339 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:41:35.925739 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:41:35.925899 #27814]  INFO -- :   Parameters: {"id"=>"index"}
+I, [2020-03-30T18:41:35.929741 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:41:35.930632 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.3ms)
+I, [2020-03-30T18:41:35.932491 #27814]  INFO -- : Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T18:42:21.327591 #27814]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:42:21 +0000
+I, [2020-03-30T18:42:21.328226 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:42:21.329512 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:42:21.330023 #27814]  INFO -- :   Parameters: {"id"=>"index"}
+I, [2020-03-30T18:42:21.332638 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:42:21.333461 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.6ms)
+I, [2020-03-30T18:42:21.335139 #27814]  INFO -- : Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T18:44:00.712550 #27814]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:44:00 +0000
+I, [2020-03-30T18:44:00.713769 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:44:00.715693 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:44:00.715984 #27814]  INFO -- :   Parameters: {"id"=>"index"}
+I, [2020-03-30T18:44:00.720483 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:44:00.724392 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (3.5ms)
+I, [2020-03-30T18:44:00.726158 #27814]  INFO -- : Completed 500  in 10ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:44:00.730628 #27814] FATAL -- :   
+F, [2020-03-30T18:44:00.730816 #27814] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:44:00.731070 #27814] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% @stores.each do |store| %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:44:00.731207 #27814] FATAL -- :   
+F, [2020-03-30T18:44:00.731343 #27814] FATAL -- : app/views/stores/show.html.erb:9:in `_app_views_stores_show_html_erb__153965962483018665_34320'
+I, [2020-03-30T18:44:00.894947 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:44:00.910956 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:44:00.917856 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+I, [2020-03-30T18:44:00.936995 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:44:00.939068 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2020-03-30T18:44:00.957439 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:44:00.958468 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T18:44:00.958697 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.6ms)
+I, [2020-03-30T18:46:14.347997 #27814]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:46:14 +0000
+I, [2020-03-30T18:46:14.349200 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:46:14.351198 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:46:14.351489 #27814]  INFO -- :   Parameters: {"id"=>"index"}
+I, [2020-03-30T18:46:14.355872 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:46:14.360794 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (4.4ms)
+I, [2020-03-30T18:46:14.363181 #27814]  INFO -- : Completed 500  in 11ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:46:14.368124 #27814] FATAL -- :   
+F, [2020-03-30T18:46:14.368291 #27814] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:46:14.368592 #27814] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% for store in @stores %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:46:14.368793 #27814] FATAL -- :   
+F, [2020-03-30T18:46:14.368948 #27814] FATAL -- : app/views/stores/show.html.erb:9:in `_app_views_stores_show_html_erb__153965962483018665_34680'
+I, [2020-03-30T18:46:14.487086 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:46:14.501759 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:46:14.504732 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+I, [2020-03-30T18:46:14.517751 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:46:14.519120 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+I, [2020-03-30T18:46:14.532311 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:46:14.533095 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2020-03-30T18:46:14.533325 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.1ms)
+I, [2020-03-30T18:46:35.769012 #27814]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:46:35 +0000
+I, [2020-03-30T18:46:35.771009 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:46:35.773129 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:46:35.773554 #27814]  INFO -- :   Parameters: {"id"=>"index"}
+I, [2020-03-30T18:46:35.778383 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:46:35.782992 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (4.1ms)
+I, [2020-03-30T18:46:35.785117 #27814]  INFO -- : Completed 500  in 11ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:46:35.790601 #27814] FATAL -- :   
+F, [2020-03-30T18:46:35.790871 #27814] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:46:35.791361 #27814] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% for store in @stores %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:46:35.791653 #27814] FATAL -- :   
+F, [2020-03-30T18:46:35.792015 #27814] FATAL -- : app/views/stores/show.html.erb:9:in `_app_views_stores_show_html_erb__153965962483018665_35040'
+I, [2020-03-30T18:46:35.914075 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:46:35.928322 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:46:35.931646 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+I, [2020-03-30T18:46:35.944959 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:46:35.946514 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2020-03-30T18:46:35.960528 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:46:35.961377 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2020-03-30T18:46:35.961838 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.6ms)
+I, [2020-03-30T18:47:58.756570 #27814]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:47:58 +0000
+I, [2020-03-30T18:47:58.757297 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:47:58.758690 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:47:58.758868 #27814]  INFO -- :   Parameters: {"id"=>"index"}
+I, [2020-03-30T18:47:58.761935 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:47:58.767752 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (5.5ms)
+I, [2020-03-30T18:47:58.768958 #27814]  INFO -- : Completed 500  in 10ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:47:58.771977 #27814] FATAL -- :   
+F, [2020-03-30T18:47:58.772283 #27814] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:47:58.772625 #27814] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% for store in @stores %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:47:58.772892 #27814] FATAL -- :   
+F, [2020-03-30T18:47:58.773173 #27814] FATAL -- : app/views/stores/show.html.erb:9:in `_app_views_stores_show_html_erb__153965962483018665_35400'
+I, [2020-03-30T18:47:58.909974 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:47:58.929314 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:47:58.941802 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.1ms)
+I, [2020-03-30T18:47:58.960368 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:47:58.963769 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+I, [2020-03-30T18:47:58.986231 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:47:58.988029 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+I, [2020-03-30T18:47:58.988256 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.1ms)
+I, [2020-03-30T18:48:05.831774 #27814]  INFO -- : Started GET "/stores/show" for 103.104.215.14 at 2020-03-30 18:48:05 +0000
+I, [2020-03-30T18:48:05.832478 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:48:05.833583 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:48:05.833768 #27814]  INFO -- :   Parameters: {"id"=>"show"}
+I, [2020-03-30T18:48:05.838651 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:48:05.840996 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (2.1ms)
+I, [2020-03-30T18:48:05.842306 #27814]  INFO -- : Completed 500  in 8ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T18:48:05.845175 #27814] FATAL -- :   
+F, [2020-03-30T18:48:05.845468 #27814] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:48:05.846488 #27814] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% for store in @stores %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:48:05.846787 #27814] FATAL -- :   
+F, [2020-03-30T18:48:05.847081 #27814] FATAL -- : app/views/stores/show.html.erb:9:in `_app_views_stores_show_html_erb__153965962483018665_35760'
+I, [2020-03-30T18:48:05.994071 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:48:06.012404 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:48:06.018917 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+I, [2020-03-30T18:48:06.032731 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:48:06.039760 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+I, [2020-03-30T18:48:06.057118 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:48:06.058644 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2020-03-30T18:48:06.059233 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.6ms)
+I, [2020-03-30T18:50:01.529396 #27814]  INFO -- : Started GET "/stores/show" for 103.104.215.14 at 2020-03-30 18:50:01 +0000
+I, [2020-03-30T18:50:01.530099 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:50:01.586795 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:50:01.586951 #27814]  INFO -- :   Parameters: {"id"=>"show"}
+D, [2020-03-30T18:50:01.602945 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+D, [2020-03-30T18:50:01.603311 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T18:50:02.304194 #27814]  INFO -- : Completed 500  in 717ms (ActiveRecord: 7.4ms)
+
+
+F, [2020-03-30T18:50:02.441178 #27814] FATAL -- :   
+F, [2020-03-30T18:50:02.441285 #27814] FATAL -- : ActiveRecord::RecordNotFound (Couldn't find Store with 'id'=show):
+F, [2020-03-30T18:50:02.441385 #27814] FATAL -- :   
+F, [2020-03-30T18:50:02.442043 #27814] FATAL -- : app/controllers/stores_controller.rb:38:in `show'
+I, [2020-03-30T18:50:02.529269 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2020-03-30T18:50:02.552782 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:50:02.563261 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.2ms)
+I, [2020-03-30T18:50:02.579816 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:50:02.584058 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+I, [2020-03-30T18:50:02.610133 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:50:02.612421 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T18:50:02.612698 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.3ms)
+I, [2020-03-30T18:50:28.993465 #27814]  INFO -- : Started GET "/stores/index" for 103.104.215.14 at 2020-03-30 18:50:28 +0000
+I, [2020-03-30T18:50:28.995313 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:50:28.997473 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:50:28.997749 #27814]  INFO -- :   Parameters: {"id"=>"index"}
+D, [2020-03-30T18:50:29.001660 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+D, [2020-03-30T18:50:29.002051 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T18:50:29.345079 #27814]  INFO -- : Completed 500  in 347ms (ActiveRecord: 0.1ms)
+
+
+F, [2020-03-30T18:50:29.426563 #27814] FATAL -- :   
+F, [2020-03-30T18:50:29.426705 #27814] FATAL -- : ActiveRecord::RecordNotFound (Couldn't find Store with 'id'=index):
+F, [2020-03-30T18:50:29.426790 #27814] FATAL -- :   
+F, [2020-03-30T18:50:29.426873 #27814] FATAL -- : app/controllers/stores_controller.rb:38:in `show'
+I, [2020-03-30T18:50:29.489249 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2020-03-30T18:50:29.510383 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:50:29.512888 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+I, [2020-03-30T18:50:29.529373 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:50:29.531250 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+I, [2020-03-30T18:50:29.548408 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:50:29.549413 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T18:50:29.549682 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+I, [2020-03-30T18:50:38.885568 #27814]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 18:50:38 +0000
+I, [2020-03-30T18:50:38.886211 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:50:38.887370 #27814]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T18:50:38.894223 #27814]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T18:50:38.895659 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T18:50:38.896054 #27814] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T18:50:38.896783 #27814]  INFO -- :   Rendered stores/index.html.erb within layouts/application (2.3ms)
+I, [2020-03-30T18:50:38.898203 #27814]  INFO -- : Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T18:50:48.498785 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 18:50:48 +0000
+I, [2020-03-30T18:50:48.499443 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:50:48.500657 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:50:48.500804 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T18:50:48.501859 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T18:50:48.502196 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T18:50:49.243844 #27814]  INFO -- : Completed 500  in 742ms (ActiveRecord: 0.1ms)
+
+
+F, [2020-03-30T18:50:49.370344 #27814] FATAL -- :   
+F, [2020-03-30T18:50:49.370979 #27814] FATAL -- : ActiveRecord::RecordNotFound (Couldn't find Store with 'id'=1):
+F, [2020-03-30T18:50:49.371387 #27814] FATAL -- :   
+F, [2020-03-30T18:50:49.371756 #27814] FATAL -- : app/controllers/stores_controller.rb:38:in `show'
+I, [2020-03-30T18:50:49.438632 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2020-03-30T18:50:49.456614 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:50:49.459446 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+I, [2020-03-30T18:50:49.477358 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:50:49.479034 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2020-03-30T18:50:49.497443 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:50:49.498801 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2020-03-30T18:50:49.499148 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.3ms)
+I, [2020-03-30T18:50:59.918485 #27814]  INFO -- : Started GET "/stores/new" for 103.104.215.14 at 2020-03-30 18:50:59 +0000
+I, [2020-03-30T18:50:59.919165 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:50:59.920380 #27814]  INFO -- : Processing by StoresController#new as HTML
+I, [2020-03-30T18:50:59.932464 #27814]  INFO -- :   Rendering stores/new.html.erb within layouts/application
+I, [2020-03-30T18:50:59.936959 #27814]  INFO -- :   Rendered stores/_form.html.erb (3.4ms)
+I, [2020-03-30T18:50:59.937251 #27814]  INFO -- :   Rendered stores/new.html.erb within layouts/application (4.5ms)
+I, [2020-03-30T18:50:59.946787 #27814]  INFO -- : Completed 200 OK in 26ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-03-30T18:53:06.929322 #27814]  INFO -- : Started POST "/stores" for 103.104.215.14 at 2020-03-30 18:53:06 +0000
+I, [2020-03-30T18:53:06.930224 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:53:06.931529 #27814]  INFO -- : Processing by StoresController#create as HTML
+I, [2020-03-30T18:53:06.931888 #27814]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"NOG52IlrzJoEBVkjNMw67Cw8YA0bN2yGGCG1JUmXEIp3drDAdZ48i0e2JDQzXju4jKY14QVpCVfQXaYG3qPafw==", "store"=>{"name"=>"CMU", "street"=>"11", "city"=>"Pittsburgh", "state"=>"PA", "zip"=>"54000", "phone"=>"1012589631", "active"=>"true"}, "commit"=>"Create Store"}
+D, [2020-03-30T18:53:06.937824 #27814] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T18:53:06.938263 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:17
+D, [2020-03-30T18:53:06.940567 #27814] DEBUG -- :   [1m[36mStore Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "stores" WHERE LOWER("stores"."name") = LOWER(?) LIMIT ?[0m  [["name", "CMU"], ["LIMIT", 1]]
+D, [2020-03-30T18:53:06.941121 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:17
+D, [2020-03-30T18:53:06.943788 #27814] DEBUG -- :   [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "street", "city", "state", "zip", "phone", "active") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "CMU"], ["street", "11"], ["city", "Pittsburgh"], ["state", "PA"], ["zip", "54000"], ["phone", "1012589631"], ["active", 1]]
+D, [2020-03-30T18:53:06.944221 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:17
+D, [2020-03-30T18:53:06.952633 #27814] DEBUG -- :   [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T18:53:06.953019 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:17
+I, [2020-03-30T18:53:06.954436 #27814]  INFO -- : Redirected to https://amanaam-1.paiza-user-basic.cloud:3000/stores/1
+I, [2020-03-30T18:53:06.955691 #27814]  INFO -- : Completed 302 Found in 23ms (ActiveRecord: 7.0ms)
+
+
+I, [2020-03-30T18:53:07.286485 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 18:53:07 +0000
+I, [2020-03-30T18:53:07.287238 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:53:07.288448 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:53:07.288619 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T18:53:07.289842 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T18:53:07.290223 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T18:53:07.298757 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:53:07.301446 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (2.4ms)
+I, [2020-03-30T18:53:07.307059 #27814]  INFO -- : Completed 500  in 18ms (ActiveRecord: 0.2ms)
+
+
+F, [2020-03-30T18:53:07.310982 #27814] FATAL -- :   
+F, [2020-03-30T18:53:07.311313 #27814] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:53:07.311689 #27814] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% for store in @stores %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:53:07.311995 #27814] FATAL -- :   
+F, [2020-03-30T18:53:07.312284 #27814] FATAL -- : app/views/stores/show.html.erb:9:in `_app_views_stores_show_html_erb__153965962483018665_40740'
+I, [2020-03-30T18:53:07.416881 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:53:07.438937 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:53:07.442222 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+I, [2020-03-30T18:53:07.458909 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:53:07.460602 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2020-03-30T18:53:07.473527 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:53:07.474574 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2020-03-30T18:53:07.474803 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.8ms)
+I, [2020-03-30T18:53:22.155274 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 18:53:22 +0000
+I, [2020-03-30T18:53:22.155908 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:53:22.157507 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:53:22.157670 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T18:53:22.158681 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T18:53:22.159016 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T18:53:22.166228 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:53:22.168758 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (2.3ms)
+I, [2020-03-30T18:53:22.170066 #27814]  INFO -- : Completed 500  in 12ms (ActiveRecord: 0.1ms)
+
+
+F, [2020-03-30T18:53:22.177765 #27814] FATAL -- :   
+F, [2020-03-30T18:53:22.178116 #27814] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:53:22.178466 #27814] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% for store in @stores %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:53:22.178570 #27814] FATAL -- :   
+F, [2020-03-30T18:53:22.178666 #27814] FATAL -- : app/views/stores/show.html.erb:9:in `_app_views_stores_show_html_erb__153965962483018665_41160'
+I, [2020-03-30T18:53:22.302294 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:53:22.319364 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:53:22.326878 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+I, [2020-03-30T18:53:22.339126 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:53:22.340712 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2020-03-30T18:53:22.357844 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:53:22.358827 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2020-03-30T18:53:22.359052 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.6ms)
+I, [2020-03-30T18:53:27.002388 #27814]  INFO -- : Started GET "/stores/" for 103.104.215.14 at 2020-03-30 18:53:27 +0000
+I, [2020-03-30T18:53:27.003065 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:53:27.004211 #27814]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T18:53:27.011173 #27814]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T18:53:27.012674 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T18:53:27.013275 #27814] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T18:53:27.014511 #27814]  INFO -- :   Rendered stores/index.html.erb within layouts/application (3.0ms)
+I, [2020-03-30T18:53:27.016112 #27814]  INFO -- : Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T18:53:30.420755 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 18:53:30 +0000
+I, [2020-03-30T18:53:30.421378 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:53:30.422441 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T18:53:30.422601 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T18:53:30.423568 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T18:53:30.423901 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T18:53:30.430141 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T18:53:30.432325 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (2.0ms)
+I, [2020-03-30T18:53:30.433412 #27814]  INFO -- : Completed 500  in 11ms (ActiveRecord: 0.1ms)
+
+
+F, [2020-03-30T18:53:30.437077 #27814] FATAL -- :   
+F, [2020-03-30T18:53:30.437401 #27814] FATAL -- : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+F, [2020-03-30T18:53:30.437775 #27814] FATAL -- :      6:         <th>City</th>
+     7:     </tr>
+     8:     
+     9:     <% for store in @stores %>
+    10:     <tr>
+    11:         <td><%= link_to store.name, store_path(store) %></td>
+    12:         <td><%= store.phone %></td>
+F, [2020-03-30T18:53:30.438055 #27814] FATAL -- :   
+F, [2020-03-30T18:53:30.438319 #27814] FATAL -- : app/views/stores/show.html.erb:9:in `_app_views_stores_show_html_erb__153965962483018665_41780'
+I, [2020-03-30T18:53:30.533186 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T18:53:30.550376 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T18:53:30.564293 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.6ms)
+I, [2020-03-30T18:53:30.583039 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T18:53:30.585906 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+I, [2020-03-30T18:53:30.603044 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T18:53:30.604026 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T18:53:30.609777 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.9ms)
+I, [2020-03-30T18:53:46.135083 #27814]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 18:53:46 +0000
+I, [2020-03-30T18:53:46.135687 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:53:46.137108 #27814]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T18:53:46.141791 #27814]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T18:53:46.143338 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T18:53:46.145604 #27814] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T18:53:46.146739 #27814]  INFO -- :   Rendered stores/index.html.erb within layouts/application (4.6ms)
+I, [2020-03-30T18:53:46.148766 #27814]  INFO -- : Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T18:55:34.506593 #27814]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 18:55:34 +0000
+I, [2020-03-30T18:55:34.507199 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T18:55:34.509658 #27814]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T18:55:34.517703 #27814]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T18:55:34.519050 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T18:55:34.519441 #27814] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T18:55:34.520359 #27814]  INFO -- :   Rendered stores/index.html.erb within layouts/application (2.4ms)
+I, [2020-03-30T18:55:34.521672 #27814]  INFO -- : Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T19:01:06.785463 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:01:06 +0000
+I, [2020-03-30T19:01:06.786077 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:01:06.787245 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:01:06.787390 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:01:06.788382 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:01:06.788721 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:01:06.791028 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:01:06.791972 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.7ms)
+I, [2020-03-30T19:01:06.793216 #27814]  INFO -- : Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:02:22.768100 #27814]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 19:02:22 +0000
+I, [2020-03-30T19:02:22.768909 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:02:22.770186 #27814]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T19:02:22.773772 #27814]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T19:02:22.776146 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T19:02:22.777122 #27814] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T19:02:22.782231 #27814]  INFO -- :   Rendered stores/index.html.erb within layouts/application (4.2ms)
+I, [2020-03-30T19:02:22.784906 #27814]  INFO -- : Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T19:02:24.610659 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:02:24 +0000
+I, [2020-03-30T19:02:24.611864 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:02:24.612985 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:02:24.613120 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:02:24.614156 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:02:24.614518 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:02:24.622431 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:02:24.624021 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (1.3ms)
+I, [2020-03-30T19:02:24.626181 #27814]  INFO -- : Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:06:15.249432 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:06:15 +0000
+I, [2020-03-30T19:06:15.250127 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:06:15.251235 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:06:15.251380 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:06:15.252455 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:06:15.252817 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:06:15.255432 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:06:15.256333 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.7ms)
+I, [2020-03-30T19:06:15.257588 #27814]  INFO -- : Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:07:58.027071 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:07:58 +0000
+I, [2020-03-30T19:07:58.027665 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:07:58.028757 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:07:58.028919 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:07:58.029909 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:07:58.030242 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:07:58.032471 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:07:58.033439 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.7ms)
+I, [2020-03-30T19:07:58.038784 #27814]  INFO -- : Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:08:19.278914 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:08:19 +0000
+I, [2020-03-30T19:08:19.279544 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:08:19.280697 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:08:19.280844 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:08:19.281978 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:08:19.282303 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:08:19.284586 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:08:19.285616 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.8ms)
+I, [2020-03-30T19:08:19.287018 #27814]  INFO -- : Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:08:26.808868 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:08:26 +0000
+I, [2020-03-30T19:08:26.809543 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:08:26.810683 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:08:26.810832 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:08:26.811867 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:08:26.812175 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:08:26.818492 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:08:26.819499 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.7ms)
+I, [2020-03-30T19:08:26.820867 #27814]  INFO -- : Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:08:47.551086 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:08:47 +0000
+I, [2020-03-30T19:08:47.551721 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:08:47.552840 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:08:47.553022 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:08:47.554006 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:08:47.554351 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:08:47.556677 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:08:47.561931 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.7ms)
+I, [2020-03-30T19:08:47.563476 #27814]  INFO -- : Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:09:20.218621 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:09:20 +0000
+I, [2020-03-30T19:09:20.219730 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:09:20.220793 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:09:20.220955 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:09:20.227339 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:09:20.228101 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:09:20.230766 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:09:20.246824 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (15.7ms)
+I, [2020-03-30T19:09:20.248753 #27814]  INFO -- : Completed 200 OK in 28ms (Views: 18.4ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:09:40.497754 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:09:40 +0000
+I, [2020-03-30T19:09:40.498479 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:09:40.499921 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:09:40.500198 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:09:40.501808 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:09:40.502291 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:09:40.505803 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:09:40.506954 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.8ms)
+I, [2020-03-30T19:09:40.509171 #27814]  INFO -- : Completed 200 OK in 8ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:09:46.457616 #27814]  INFO -- : Started GET "/stores/1/edit" for 103.104.215.14 at 2020-03-30 19:09:46 +0000
+I, [2020-03-30T19:09:46.458345 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:09:46.459622 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T19:09:46.459783 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2020-03-30T19:09:46.462685 #27814]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T19:09:46.465872 #27814]  INFO -- :   Rendered stores/_form.html.erb (1.9ms)
+I, [2020-03-30T19:09:46.466219 #27814]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (3.3ms)
+I, [2020-03-30T19:09:46.467163 #27814]  INFO -- : Completed 500  in 7ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T19:09:46.470154 #27814] FATAL -- :   
+F, [2020-03-30T19:09:46.470266 #27814] FATAL -- : ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+F, [2020-03-30T19:09:46.470422 #27814] FATAL -- :     1: <%= form_for @store do |f| %>
+    2: 	<%= hidden_field_tag "store[store_ids][]", nil%>
+    3:   <% if @store.errors.any? %>
+    4:     <div id="error_explanation">
+F, [2020-03-30T19:09:46.470523 #27814] FATAL -- :   
+F, [2020-03-30T19:09:46.470610 #27814] FATAL -- : app/views/stores/_form.html.erb:1:in `_app_views_stores__form_html_erb___4014757065603702331_44560'
+app/views/stores/edit.html.erb:1:in `_app_views_stores_edit_html_erb__356751480976665182_44540'
+I, [2020-03-30T19:09:46.608938 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T19:09:46.627742 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T19:09:46.631538 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+I, [2020-03-30T19:09:46.649848 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T19:09:46.651848 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2020-03-30T19:09:46.668924 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T19:09:46.669910 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T19:09:46.670143 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.0ms)
+I, [2020-03-30T19:11:59.384170 #27814]  INFO -- : Started GET "/stores/1/edit" for 103.104.215.14 at 2020-03-30 19:11:59 +0000
+I, [2020-03-30T19:11:59.384926 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:11:59.386169 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T19:11:59.386316 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2020-03-30T19:11:59.388626 #27814]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T19:11:59.391738 #27814]  INFO -- :   Rendered stores/_form.html.erb (2.0ms)
+I, [2020-03-30T19:11:59.392128 #27814]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (3.2ms)
+I, [2020-03-30T19:11:59.393028 #27814]  INFO -- : Completed 500  in 7ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T19:11:59.406080 #27814] FATAL -- :   
+F, [2020-03-30T19:11:59.406205 #27814] FATAL -- : ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+F, [2020-03-30T19:11:59.406403 #27814] FATAL -- :     1: <%= form_for(@store) do |f| %>
+    2: 	<%= hidden_field_tag "store[store_ids][]", nil%>
+    3:   <% if @store.errors.any? %>
+    4:     <div id="error_explanation">
+F, [2020-03-30T19:11:59.406501 #27814] FATAL -- :   
+F, [2020-03-30T19:11:59.406599 #27814] FATAL -- : app/views/stores/_form.html.erb:1:in `_app_views_stores__form_html_erb___4014757065603702331_45000'
+app/views/stores/edit.html.erb:1:in `_app_views_stores_edit_html_erb__356751480976665182_44980'
+I, [2020-03-30T19:11:59.541592 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T19:11:59.563417 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T19:11:59.567181 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+I, [2020-03-30T19:11:59.583858 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T19:11:59.585667 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+I, [2020-03-30T19:11:59.602507 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T19:11:59.603549 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2020-03-30T19:11:59.603832 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.0ms)
+I, [2020-03-30T19:12:16.949817 #27814]  INFO -- : Started GET "/stores/edit" for 103.104.215.14 at 2020-03-30 19:12:16 +0000
+I, [2020-03-30T19:12:16.950493 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:12:16.951608 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:12:16.951760 #27814]  INFO -- :   Parameters: {"id"=>"edit"}
+D, [2020-03-30T19:12:16.952839 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+D, [2020-03-30T19:12:16.953181 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:12:17.601191 #27814]  INFO -- : Completed 500  in 649ms (ActiveRecord: 0.1ms)
+
+
+F, [2020-03-30T19:12:17.706389 #27814] FATAL -- :   
+F, [2020-03-30T19:12:17.706487 #27814] FATAL -- : ActiveRecord::RecordNotFound (Couldn't find Store with 'id'=edit):
+F, [2020-03-30T19:12:17.706565 #27814] FATAL -- :   
+F, [2020-03-30T19:12:17.706680 #27814] FATAL -- : app/controllers/stores_controller.rb:38:in `show'
+I, [2020-03-30T19:12:17.808341 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2020-03-30T19:12:17.821609 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T19:12:17.824469 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+I, [2020-03-30T19:12:17.844129 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T19:12:17.845721 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2020-03-30T19:12:17.866797 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T19:12:17.867897 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2020-03-30T19:12:17.868149 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.7ms)
+I, [2020-03-30T19:12:22.831250 #27814]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 19:12:22 +0000
+I, [2020-03-30T19:12:22.831960 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:12:22.833099 #27814]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T19:12:22.835636 #27814]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T19:12:22.837018 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T19:12:22.837360 #27814] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T19:12:22.838444 #27814]  INFO -- :   Rendered stores/index.html.erb within layouts/application (2.5ms)
+I, [2020-03-30T19:12:22.839807 #27814]  INFO -- : Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T19:12:24.597841 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:12:24 +0000
+I, [2020-03-30T19:12:24.598588 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:12:24.599985 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:12:24.600147 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:12:24.601294 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:12:24.604323 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:38
+I, [2020-03-30T19:12:24.607035 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:12:24.608022 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.7ms)
+I, [2020-03-30T19:12:24.609518 #27814]  INFO -- : Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:12:26.755269 #27814]  INFO -- : Started GET "/stores/1/edit" for 103.104.215.14 at 2020-03-30 19:12:26 +0000
+I, [2020-03-30T19:12:26.756067 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:12:26.757242 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T19:12:26.757400 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2020-03-30T19:12:26.759972 #27814]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T19:12:26.763752 #27814]  INFO -- :   Rendered stores/_form.html.erb (2.7ms)
+I, [2020-03-30T19:12:26.765020 #27814]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (3.9ms)
+I, [2020-03-30T19:12:26.770696 #27814]  INFO -- : Completed 500  in 13ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T19:12:26.785657 #27814] FATAL -- :   
+F, [2020-03-30T19:12:26.785793 #27814] FATAL -- : ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+F, [2020-03-30T19:12:26.785959 #27814] FATAL -- :     1: <%= form_for(@store) do |f| %>
+    2: 	<%= hidden_field_tag "store[store_ids][]", nil%>
+    3:   <% if @store.errors.any? %>
+    4:     <div id="error_explanation">
+F, [2020-03-30T19:12:26.786054 #27814] FATAL -- :   
+F, [2020-03-30T19:12:26.786140 #27814] FATAL -- : app/views/stores/_form.html.erb:1:in `_app_views_stores__form_html_erb___4014757065603702331_46260'
+app/views/stores/edit.html.erb:1:in `_app_views_stores_edit_html_erb__356751480976665182_46240'
+I, [2020-03-30T19:12:26.962729 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2020-03-30T19:12:26.979561 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T19:12:26.983416 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+I, [2020-03-30T19:12:26.999776 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T19:12:27.001508 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2020-03-30T19:12:27.017898 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T19:12:27.018998 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2020-03-30T19:12:27.019243 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.4ms)
+I, [2020-03-30T19:15:20.453296 #27814]  INFO -- : Started GET "/stores/1/edit" for 103.104.215.14 at 2020-03-30 19:15:20 +0000
+I, [2020-03-30T19:15:20.454139 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:15:20.580249 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T19:15:20.581187 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:15:20.594416 #27814] DEBUG -- :   [1m[36mStore Load (0.9ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:15:20.595384 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:8
+I, [2020-03-30T19:15:20.605340 #27814]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T19:15:20.614316 #27814]  INFO -- :   Rendered stores/_form.html.erb (4.1ms)
+I, [2020-03-30T19:15:20.615244 #27814]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (9.1ms)
+I, [2020-03-30T19:15:20.618010 #27814]  INFO -- : Completed 200 OK in 36ms (Views: 13.1ms | ActiveRecord: 1.6ms)
+
+
+I, [2020-03-30T19:15:30.710889 #27814]  INFO -- : Started PATCH "/stores/1" for 103.104.215.14 at 2020-03-30 19:15:30 +0000
+I, [2020-03-30T19:15:30.711767 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:15:30.713319 #27814]  INFO -- : Processing by StoresController#update as HTML
+I, [2020-03-30T19:15:30.713736 #27814]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"np3M1uc/kfGNiBLNkBlGItryMFj8Fy5v+E2aA03mwxz44+3eIi7Rfw3rATZx3Sh55G65YhPUTp2CzjN9k8a4+Q==", "store"=>{"store_ids"=>[""], "name"=>"CMU", "street"=>"11", "city"=>"Pittsburgh", "state"=>"PA", "zip"=>"54000", "phone"=>"1012589631", "active"=>"true"}, "commit"=>"Update Store", "id"=>"1"}
+D, [2020-03-30T19:15:30.717059 #27814] DEBUG -- : Unpermitted parameter: :store_ids
+I, [2020-03-30T19:15:30.721610 #27814]  INFO -- : Completed 500  in 6ms (ActiveRecord: 0.0ms)
+
+
+F, [2020-03-30T19:15:30.724929 #27814] FATAL -- :   
+F, [2020-03-30T19:15:30.726289 #27814] FATAL -- : NoMethodError (undefined method `update' for nil:NilClass):
+F, [2020-03-30T19:15:30.726877 #27814] FATAL -- :   
+F, [2020-03-30T19:15:30.728120 #27814] FATAL -- : app/controllers/stores_controller.rb:25:in `update'
+I, [2020-03-30T19:15:30.794217 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2020-03-30T19:15:30.811315 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2020-03-30T19:15:30.813836 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+I, [2020-03-30T19:15:30.828736 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2020-03-30T19:15:30.830499 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+I, [2020-03-30T19:15:30.848946 #27814]  INFO -- :   Rendering /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2020-03-30T19:15:30.854344 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
+I, [2020-03-30T19:15:30.854654 #27814]  INFO -- :   Rendered /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+I, [2020-03-30T19:16:44.230858 #27814]  INFO -- : Started PATCH "/stores/1" for 103.104.215.14 at 2020-03-30 19:16:44 +0000
+I, [2020-03-30T19:16:44.231724 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:16:44.279326 #27814]  INFO -- : Processing by StoresController#update as HTML
+I, [2020-03-30T19:16:44.280132 #27814]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"np3M1uc/kfGNiBLNkBlGItryMFj8Fy5v+E2aA03mwxz44+3eIi7Rfw3rATZx3Sh55G65YhPUTp2CzjN9k8a4+Q==", "store"=>{"store_ids"=>[""], "name"=>"CMU", "street"=>"11", "city"=>"Pittsburgh", "state"=>"PA", "zip"=>"54000", "phone"=>"1012589631", "active"=>"true"}, "commit"=>"Update Store", "id"=>"1"}
+D, [2020-03-30T19:16:44.293981 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:16:44.295024 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:25
+D, [2020-03-30T19:16:44.302533 #27814] DEBUG -- : Unpermitted parameter: :store_ids
+D, [2020-03-30T19:16:44.303603 #27814] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T19:16:44.304533 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+D, [2020-03-30T19:16:44.310213 #27814] DEBUG -- :   [1m[36mStore Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "stores" WHERE LOWER("stores"."name") = LOWER(?) AND "stores"."id" != ? LIMIT ?[0m  [["name", "CMU"], ["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:16:44.311199 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+D, [2020-03-30T19:16:44.313154 #27814] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T19:16:44.314056 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+I, [2020-03-30T19:16:44.315752 #27814]  INFO -- : Redirected to https://amanaam-1.paiza-user-basic.cloud:3000/stores/1
+I, [2020-03-30T19:16:44.318624 #27814]  INFO -- : Completed 302 Found in 37ms (ActiveRecord: 1.2ms)
+
+
+I, [2020-03-30T19:16:44.769562 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:16:44 +0000
+I, [2020-03-30T19:16:44.770278 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:16:44.771716 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:16:44.771861 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:16:44.772975 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:16:44.773309 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:39
+I, [2020-03-30T19:16:44.776226 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:16:44.777306 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.8ms)
+I, [2020-03-30T19:16:44.783043 #27814]  INFO -- : Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:16:49.134333 #27814]  INFO -- : Started GET "/stores/1/edit" for 103.104.215.14 at 2020-03-30 19:16:49 +0000
+I, [2020-03-30T19:16:49.135137 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:16:49.136523 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T19:16:49.136686 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:16:49.137790 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:16:49.138167 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:8
+I, [2020-03-30T19:16:49.140545 #27814]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T19:16:49.157863 #27814]  INFO -- :   Rendered stores/_form.html.erb (16.1ms)
+I, [2020-03-30T19:16:49.158202 #27814]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (17.4ms)
+I, [2020-03-30T19:16:49.159566 #27814]  INFO -- : Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T19:16:52.294789 #27814]  INFO -- : Started PATCH "/stores/1" for 103.104.215.14 at 2020-03-30 19:16:52 +0000
+I, [2020-03-30T19:16:52.295457 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:16:52.305817 #27814]  INFO -- : Processing by StoresController#update as HTML
+I, [2020-03-30T19:16:52.306126 #27814]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"/7/v91d4dtaxJmi3MicRTN7O5IGpY9YCdAwRmmEXUHmZwc7/kmk2WDFFe0zT438X4FJtu0agtvAOj7jkvzcrnA==", "store"=>{"store_ids"=>[""], "name"=>"CMU", "street"=>"11", "city"=>"Pittsburgh", "state"=>"PA", "zip"=>"54000", "phone"=>"1012589631", "active"=>"true"}, "commit"=>"Update Store", "id"=>"1"}
+D, [2020-03-30T19:16:52.307547 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:16:52.307947 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:25
+D, [2020-03-30T19:16:52.316703 #27814] DEBUG -- : Unpermitted parameter: :store_ids
+D, [2020-03-30T19:16:52.321883 #27814] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T19:16:52.322782 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+D, [2020-03-30T19:16:52.330290 #27814] DEBUG -- :   [1m[36mStore Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "stores" WHERE LOWER("stores"."name") = LOWER(?) AND "stores"."id" != ? LIMIT ?[0m  [["name", "CMU"], ["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:16:52.332938 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+D, [2020-03-30T19:16:52.338143 #27814] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T19:16:52.346424 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+I, [2020-03-30T19:16:52.347931 #27814]  INFO -- : Redirected to https://amanaam-1.paiza-user-basic.cloud:3000/stores/1
+I, [2020-03-30T19:16:52.354159 #27814]  INFO -- : Completed 302 Found in 43ms (ActiveRecord: 0.5ms)
+
+
+I, [2020-03-30T19:16:52.769279 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:16:52 +0000
+I, [2020-03-30T19:16:52.770172 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:16:52.773880 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:16:52.774576 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:16:52.776719 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:16:52.777632 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:39
+I, [2020-03-30T19:16:52.780587 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:16:52.782227 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.8ms)
+I, [2020-03-30T19:16:52.786646 #27814]  INFO -- : Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T19:16:55.804488 #27814]  INFO -- : Started GET "/stores/1/edit" for 103.104.215.14 at 2020-03-30 19:16:55 +0000
+I, [2020-03-30T19:16:55.805282 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:16:55.806647 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T19:16:55.806961 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:16:55.809731 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:16:55.810362 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:8
+I, [2020-03-30T19:16:55.814166 #27814]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T19:16:55.823792 #27814]  INFO -- :   Rendered stores/_form.html.erb (7.8ms)
+I, [2020-03-30T19:16:55.824678 #27814]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (9.7ms)
+I, [2020-03-30T19:16:55.827111 #27814]  INFO -- : Completed 200 OK in 19ms (Views: 13.8ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:17:00.955260 #27814]  INFO -- : Started PATCH "/stores/1" for 103.104.215.14 at 2020-03-30 19:17:00 +0000
+I, [2020-03-30T19:17:00.956021 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:17:00.957266 #27814]  INFO -- : Processing by StoresController#update as HTML
+I, [2020-03-30T19:17:00.957444 #27814]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqLVgq7D/e/bC7NGVDSziMZRHwwPRwsUWckRQCMYvEX43PSKa9K9YVtooL218N3T+M2WNuCEa+YjSrg+/TjHoA==", "store"=>{"store_ids"=>[""], "name"=>"CMU", "street"=>"11", "city"=>"Pittsburgh", "state"=>"PA", "zip"=>"54000", "phone"=>"1012589632", "active"=>"true"}, "commit"=>"Update Store", "id"=>"1"}
+D, [2020-03-30T19:17:00.962909 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:17:00.963254 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:25
+D, [2020-03-30T19:17:00.964259 #27814] DEBUG -- : Unpermitted parameter: :store_ids
+D, [2020-03-30T19:17:00.964762 #27814] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-30T19:17:00.965116 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+D, [2020-03-30T19:17:00.966730 #27814] DEBUG -- :   [1m[36mStore Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "stores" WHERE LOWER("stores"."name") = LOWER(?) AND "stores"."id" != ? LIMIT ?[0m  [["name", "CMU"], ["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:17:00.967137 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+D, [2020-03-30T19:17:00.968751 #27814] DEBUG -- :   [1m[36mStore Update (0.2ms)[0m  [1m[33mUPDATE "stores" SET "phone" = ? WHERE "stores"."id" = ?[0m  [["phone", "1012589632"], ["id", 1]]
+D, [2020-03-30T19:17:00.974100 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+D, [2020-03-30T19:17:00.978033 #27814] DEBUG -- :   [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-30T19:17:00.979000 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:26
+I, [2020-03-30T19:17:00.979916 #27814]  INFO -- : Redirected to https://amanaam-1.paiza-user-basic.cloud:3000/stores/1
+I, [2020-03-30T19:17:00.981042 #27814]  INFO -- : Completed 302 Found in 19ms (ActiveRecord: 3.5ms)
+
+
+I, [2020-03-30T19:17:01.464463 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:17:01 +0000
+I, [2020-03-30T19:17:01.465153 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:17:01.466429 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:17:01.466623 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:17:01.467678 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:17:01.468018 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:39
+I, [2020-03-30T19:17:01.470417 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:17:01.471481 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.8ms)
+I, [2020-03-30T19:17:01.473096 #27814]  INFO -- : Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:17:03.545512 #27814]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 19:17:03 +0000
+I, [2020-03-30T19:17:03.546222 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:17:03.547842 #27814]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T19:17:03.554296 #27814]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T19:17:03.556733 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T19:17:03.557725 #27814] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T19:17:03.559251 #27814]  INFO -- :   Rendered stores/index.html.erb within layouts/application (4.2ms)
+I, [2020-03-30T19:17:03.562006 #27814]  INFO -- : Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T19:17:05.578734 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:17:05 +0000
+I, [2020-03-30T19:17:05.580009 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:17:05.586007 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:17:05.586707 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:17:05.588416 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:17:05.589310 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:39
+I, [2020-03-30T19:17:05.592251 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:17:05.593870 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.8ms)
+I, [2020-03-30T19:17:05.596244 #27814]  INFO -- : Completed 200 OK in 8ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:17:15.139133 #27814]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 19:17:15 +0000
+I, [2020-03-30T19:17:15.139746 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:17:15.140807 #27814]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T19:17:15.143661 #27814]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T19:17:15.145092 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T19:17:15.145558 #27814] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T19:17:15.151697 #27814]  INFO -- :   Rendered stores/index.html.erb within layouts/application (6.9ms)
+I, [2020-03-30T19:17:15.157752 #27814]  INFO -- : Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T19:17:16.672351 #27814]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:17:16 +0000
+I, [2020-03-30T19:17:16.673090 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:17:16.674381 #27814]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:17:16.674554 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:17:16.675642 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:17:16.676087 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:39
+I, [2020-03-30T19:17:16.679880 #27814]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:17:16.681003 #27814]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.8ms)
+I, [2020-03-30T19:17:16.682352 #27814]  INFO -- : Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:17:19.115319 #27814]  INFO -- : Started GET "/stores/1/edit" for 103.104.215.14 at 2020-03-30 19:17:19 +0000
+I, [2020-03-30T19:17:19.115925 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:17:19.117020 #27814]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T19:17:19.117169 #27814]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:17:19.118328 #27814] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:17:19.118676 #27814] DEBUG -- :   ↳ app/controllers/stores_controller.rb:8
+I, [2020-03-30T19:17:19.120998 #27814]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T19:17:19.130031 #27814]  INFO -- :   Rendered stores/_form.html.erb (3.5ms)
+I, [2020-03-30T19:17:19.130411 #27814]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (9.2ms)
+I, [2020-03-30T19:17:19.131757 #27814]  INFO -- : Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:17:22.019600 #27814]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 19:17:22 +0000
+I, [2020-03-30T19:17:22.020237 #27814]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:17:22.021318 #27814]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T19:17:22.023620 #27814]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T19:17:22.024907 #27814] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T19:17:22.025291 #27814] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T19:17:22.031117 #27814]  INFO -- :   Rendered stores/index.html.erb within layouts/application (7.2ms)
+I, [2020-03-30T19:17:22.032625 #27814]  INFO -- : Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T19:36:16.122965 #32631]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 19:36:16 +0000
+I, [2020-03-30T19:36:16.123915 #32631]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2020-03-30T19:36:16.139279 #32631] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-03-30T19:36:16.139403 #32631] DEBUG -- :   ↳ /usr/local/rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+I, [2020-03-30T19:36:16.145482 #32631]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T19:36:16.167189 #32631]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T19:36:16.169295 #32631] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T19:36:16.169675 #32631] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T19:36:16.182431 #32631]  INFO -- :   Rendered stores/index.html.erb within layouts/application (15.0ms)
+I, [2020-03-30T19:36:16.183916 #32631]  INFO -- : Completed 200 OK in 38ms (Views: 20.8ms | ActiveRecord: 0.9ms)
+
+
+I, [2020-03-30T19:36:18.296339 #32631]  INFO -- : Started GET "/stores/1" for 103.104.215.14 at 2020-03-30 19:36:18 +0000
+I, [2020-03-30T19:36:18.296914 #32631]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:36:18.298202 #32631]  INFO -- : Processing by StoresController#show as HTML
+I, [2020-03-30T19:36:18.298351 #32631]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:36:18.299891 #32631] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:36:18.300201 #32631] DEBUG -- :   ↳ app/controllers/stores_controller.rb:39
+I, [2020-03-30T19:36:18.302492 #32631]  INFO -- :   Rendering stores/show.html.erb within layouts/application
+I, [2020-03-30T19:36:18.303424 #32631]  INFO -- :   Rendered stores/show.html.erb within layouts/application (0.7ms)
+I, [2020-03-30T19:36:18.304721 #32631]  INFO -- : Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+I, [2020-03-30T19:36:21.726511 #32631]  INFO -- : Started GET "/stores/1/edit" for 103.104.215.14 at 2020-03-30 19:36:21 +0000
+I, [2020-03-30T19:36:21.727050 #32631]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:36:21.728199 #32631]  INFO -- : Processing by StoresController#edit as HTML
+I, [2020-03-30T19:36:21.728357 #32631]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2020-03-30T19:36:21.729371 #32631] DEBUG -- :   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-30T19:36:21.729689 #32631] DEBUG -- :   ↳ app/controllers/stores_controller.rb:8
+I, [2020-03-30T19:36:21.731900 #32631]  INFO -- :   Rendering stores/edit.html.erb within layouts/application
+I, [2020-03-30T19:36:21.888833 #32631]  INFO -- :   Rendered stores/_form.html.erb (155.7ms)
+I, [2020-03-30T19:36:21.889150 #32631]  INFO -- :   Rendered stores/edit.html.erb within layouts/application (157.0ms)
+I, [2020-03-30T19:36:21.890497 #32631]  INFO -- : Completed 200 OK in 162ms (Views: 159.1ms | ActiveRecord: 0.1ms)
+
+
+I, [2020-03-30T19:36:24.895833 #32631]  INFO -- : Started GET "/stores" for 103.104.215.14 at 2020-03-30 19:36:24 +0000
+I, [2020-03-30T19:36:24.896405 #32631]  INFO -- : Cannot render console from 103.104.215.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-03-30T19:36:24.897548 #32631]  INFO -- : Processing by StoresController#index as HTML
+I, [2020-03-30T19:36:24.899961 #32631]  INFO -- :   Rendering stores/index.html.erb within layouts/application
+D, [2020-03-30T19:36:24.901296 #32631] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."active" = ? ORDER BY name[0m  [["active", 1]]
+D, [2020-03-30T19:36:24.901677 #32631] DEBUG -- :   ↳ app/views/stores/index.html.erb:9
+I, [2020-03-30T19:36:24.902549 #32631]  INFO -- :   Rendered stores/index.html.erb within layouts/application (2.4ms)
+I, [2020-03-30T19:36:24.903933 #32631]  INFO -- : Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+
+

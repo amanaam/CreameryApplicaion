@@ -1,0 +1,96 @@
+<div style="background-color:white">
+<h4>Active Managers</h4>
+<% if (@active_managers).empty? %>
+<h6>There are no active managers at this time</h6>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Employee Name</th>
+        <th>Current Assignment</th>
+        <th>Phone Number</th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @active_managers.each do |employee| %>
+    <tr>
+        <td><%= link_to employee.name, details_path(employee) %></td>
+        <td><%= ( employee.current_assignment == nil ? "n/a" : link_to(employee.current_assignment.store.name, store_path(employee.current_assignment.store)) ) %></td>
+        <td><%= employee.phone.insert(3, '-').insert(7, '-') %></td>
+        <td><%= link_to 'Edit' , edit_employee_path(employee), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= link_to 'Assignments' , employee_path(employee), :class=> "waves-effect waves-light btn #001e00" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @active_managers, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+</div>
+
+<br>
+
+<div style="background-color:white">
+
+<h4>Active Employees</h4>
+<% if (@active_employees).empty? %>
+<h6>There are no active employees at this time</h6>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Employee Name</th>
+        <th>Current Assignment</th>
+        <th>Phone Number</th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @active_employees.each do |employee| %>
+    <tr>
+        <td><%= link_to employee.name, details_path(employee) %></td>
+        <td><%= ( employee.current_assignment == nil ? "n/a" : employee.current_assignment.store.name ) %></td>
+        <td><%= employee.phone.insert(3, '-').insert(7, '-') %></td>
+        <td><%= link_to 'Edit' , edit_employee_path(employee), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= link_to 'Assignments' , employee_path(employee), :class=> "waves-effect waves-light btn #001e00" %></td>
+
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @active_employees, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+
+<br>
+</div>
+
+<div style="background-color:white">
+<h4>Inactive Employees</h4>
+<% if (@inactive_employees).empty? %>
+<h5>All employees are active.</h5>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Employee Name</th>
+        <th>Phone Number</th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @inactive_employees.each do |employee| %>
+    <tr>
+        <td><%= link_to employee.name, details_path(employee) %></td>
+        <td><%= employee.phone.insert(3, '-').insert(7, '-') %></td>
+        <td><%= link_to 'Edit' , edit_employee_path(employee), :class=> "waves-effect waves-light btn #001e00" %></td>
+    </tr>
+    <% end %>
+</table>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @inactive_employees, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+<% end %>
+</span>
+</div>
+    

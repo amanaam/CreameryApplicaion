@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>A GREAT TITLE GOES HERE; DO NOT FORGET</title>
-    <%= csrf_meta_tags %>
-    
+    <title>Creamery</title>
+      <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+      <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Bitter|Josefin+Sans|Nunito|Varela+Round" %>
   </head>
 
+
   <body>
-    <%= yield %>   
-  </body>
+    <div id = "partials" style="color:white;background-color:black; font-family: Calibri;">
+    <!-- Partials for the topbar and navigation -->
+    <%= render :partial => "partials/topbar" %>
+    <%= render :partial => "partials/nav" %><br>
+    </div>
+
+  <div class="row" font-family: Calibri;>
+      
+    <div class="col s1">
+    </div>
+    
+    <div id="main_content" class="col s7">
+        <br>
+          <!-- MAIN CONTENT GOES HERE -->
+          <%= yield %>
+    </div>
+
+    <div class="col s1">
+    </div>
+
+    <div class="col s3 center">
+      <%= render partial: 'partials/quick_links' %>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row" style="text-align:center" style="color:white;background-color:black">
+        <%= render partial: 'partials/footer' %>
+    </div> 
+  </footer>
+</body>
 </html>

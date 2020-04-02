@@ -1,0 +1,33 @@
+<h4>Employee Details</h4>
+<table class="striped" border = 1>
+<tr><td>
+  <b>Name:</b></td><td>
+  <%= @employee.proper_name %>
+</td></tr>
+
+<tr><td>
+  <b>Social Security Number:</b></td><td>
+  <%= @employee.ssn.insert(3, '-').insert(6, '-') %>
+</td></tr>
+
+<tr><td>
+  <b>Date of Birth:</b></td><td>
+  <%= @employee.date_of_birth %>
+</td></tr>
+
+<tr><td>
+  <b>Phone:</b></td><td>
+  <%= @employee.phone.insert(3, '-').insert(7, '-') %>
+</td></tr>
+
+<tr><td>
+  <b>Role:</b></td><td>
+  <%= @employee.role.capitalize %>
+</td></tr>
+
+<tr><td>
+  <b>Status:</b></td><td>
+  <%= (@employee.active ? "Active" : "inactive")%>
+</td></tr>
+</table>
+<br>

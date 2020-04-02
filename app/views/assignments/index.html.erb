@@ -1,0 +1,62 @@
+<div style="background-color:white">
+<h4>Current Assignments</h4>
+<% if (@current_assignments).empty? %>
+<h6>There are no current assignments at this time</h6>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Employee Name</th>
+        <th>Store Name</th>
+        <th>Dates</th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @current_assignments.each do |assignment| %>
+    <tr>
+        <td><%= link_to assignment.employee.name, employee_path(assignment.employee) %></td>
+        <td><%= link_to assignment.store.name, store_path(assignment.store) %></td>
+        <td><%= "#{assignment.start_date.strftime('%-m/%-d/%y')} - Present" %></td>
+        <td><%= button_to "terminate", assignment, :method => :terminate, :class=> "waves-effect waves-light btn red" %></td>
+        <td><%= button_to "delete", assignment, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @current_assignments, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+</div>
+
+<br>
+
+<div style="background-color:white">
+<h4>Past Assignments</h4>
+<% if (@past_assignments).empty? %>
+<h6>There are no past assignments at this time</h6>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Employee Name</th>
+        <th>Store Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th></th>
+    </tr>
+    
+    <% @past_assignments.each do |assignment| %>
+    <tr>
+        <td><%= link_to assignment.employee.name, employee_path(assignment.employee) %></td>
+        <td><%= link_to assignment.store.name, store_path(assignment.store) %></td>
+        <td><%= "#{assignment.start_date.strftime('%-m/%-d/%y')} - #{assignment.end_date.strftime('%-m/%-d/%y')}" %></td>
+        <td><%= button_to "delete", assignment, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @past_assignments, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+</div>
