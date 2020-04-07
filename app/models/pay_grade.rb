@@ -1,0 +1,2 @@
+class PayGrade < ApplicationRecord
+end

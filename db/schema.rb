@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_01_143940) do
+ActiveRecord::Schema.define(version: 2020_04_07_215646) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer "store_id", null: false
@@ -29,6 +29,52 @@ ActiveRecord::Schema.define(version: 2019_11_01_143940) do
     t.string "phone"
     t.string "role"
     t.boolean "active"
+  end
+
+  create_table "jobs", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pay_grade_rates", force: :cascade do |t|
+    t.integer "pay_grade_id"
+    t.float "rate"
+    t.date "start_date"
+    t.date "end_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["pay_grade_id"], name: "index_pay_grade_rates_on_pay_grade_id"
+  end
+
+  create_table "pay_grades", force: :cascade do |t|
+    t.string "level"
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "shift_jobs", force: :cascade do |t|
+    t.integer "job_id"
+    t.integer "shift_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["job_id"], name: "index_shift_jobs_on_job_id"
+    t.index ["shift_id"], name: "index_shift_jobs_on_shift_id"
+  end
+
+  create_table "shifts", force: :cascade do |t|
+    t.integer "assignment_id"
+    t.date "date"
+    t.time "start_time"
+    t.time "end_time"
+    t.text "notes"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["assignment_id"], name: "index_shifts_on_assignment_id"
   end
 
   create_table "stores", force: :cascade do |t|

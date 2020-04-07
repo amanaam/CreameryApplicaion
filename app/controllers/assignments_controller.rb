@@ -19,9 +19,10 @@ class AssignmentsController < ApplicationController
   end
   
   def terminate
-      @assignment = Assignment.find(params[:id])
-      @assignment.terminate
-      redirect_to assignments_path
+    @assignment = Assignment.find(params[:id])
+    if @assignment.terminate
+      redirect_to assignments_path, notice: "Assignment for #{@assignment.employee.proper_name} terminated."
+    end
   end
       
   def destroy

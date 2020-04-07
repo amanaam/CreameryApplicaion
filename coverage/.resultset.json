@@ -1,19 +1,19 @@
 {
-  "Minitest": {
+  "Unit Tests": {
     "coverage": {
-      "/home/ubuntu/67272_Creamery_P3_Starter/app/helpers/application_helper.rb": {
+      "/home/ubuntu/Project/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/ubuntu/67272_Creamery_P3_Starter/app/helpers/assignments_helper.rb": {
+      "/home/ubuntu/Project/app/helpers/assignments_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/ubuntu/67272_Creamery_P3_Starter/app/helpers/employees_helper.rb": {
+      "/home/ubuntu/Project/app/helpers/employees_helper.rb": {
         "lines": [
           1,
           1,
@@ -22,13 +22,146 @@
           null
         ]
       },
-      "/home/ubuntu/67272_Creamery_P3_Starter/app/helpers/stores_helper.rb": {
+      "/home/ubuntu/Project/app/helpers/home_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/ubuntu/67272_Creamery_P3_Starter/app/models/employee.rb": {
+      "/home/ubuntu/Project/app/helpers/stores_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/ubuntu/Project/app/controllers/stores_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          5,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
+      "/home/ubuntu/Project/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ubuntu/Project/app/models/store.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          4,
+          139,
+          5,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          98,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ubuntu/Project/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/ubuntu/Project/app/models/employee.rb": {
         "lines": [
           1,
           null,
@@ -39,31 +172,31 @@
           null,
           3,
           3,
+          4,
+          4,
           3,
-          3,
-          3,
-          3,
-          126,
+          5,
+          140,
+          5,
+          null,
+          null,
+          1,
+          281,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
           4,
           null,
           null,
           1,
-          260,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
           2,
           null,
           null,
@@ -72,9 +205,9 @@
           null,
           null,
           1,
-          112,
-          112,
-          3,
+          127,
+          127,
+          8,
           null,
           null,
           1,
@@ -99,25 +232,72 @@
           null,
           1,
           1,
-          254,
+          273,
           null,
           null,
           1,
-          254,
+          273,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/ubuntu/67272_Creamery_P3_Starter/app/models/application_record.rb": {
+      "/home/ubuntu/Project/app/controllers/employees_controller.rb": {
         "lines": [
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          4,
+          null,
           null
         ]
       },
-      "/home/ubuntu/67272_Creamery_P3_Starter/app/models/assignment.rb": {
+      "/home/ubuntu/Project/app/models/assignment.rb": {
         "lines": [
           1,
           null,
@@ -126,19 +306,19 @@
           1,
           null,
           null,
-          117,
-          5,
+          135,
+          6,
           2,
           2,
           2,
+          9,
           7,
-          7,
-          3,
+          4,
           3,
           null,
           null,
           1,
-          119,
+          129,
           40,
           1,
           1,
@@ -161,24 +341,24 @@
           null,
           1,
           1,
-          110,
-          110,
-          108,
+          119,
+          119,
+          117,
           null,
           2,
           null,
           null,
           null,
           1,
-          122,
-          122,
-          8,
+          132,
+          132,
+          9,
           null,
           null,
           null,
           1,
-          122,
-          122,
+          132,
+          132,
           8,
           null,
           null,
@@ -191,77 +371,65 @@
           null
         ]
       },
-      "/home/ubuntu/67272_Creamery_P3_Starter/app/models/store.rb": {
+      "/home/ubuntu/Project/app/controllers/assignments_controller.rb": {
         "lines": [
           1,
           null,
+          1,
+          1,
+          1,
+          null,
           null,
           1,
           1,
           null,
           null,
+          1,
           2,
-          126,
-          4,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
+          2,
           1,
           null,
           1,
           null,
           null,
+          null,
           1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null,
           1,
           1,
           1,
-          null,
-          null,
-          null,
           1,
-          null,
-          null,
           1,
           null,
           1,
           1,
-          null,
-          null,
-          1,
-          1,
-          79,
-          null,
+          2,
           null,
           null
         ]
       },
-      "/home/ubuntu/67272_Creamery_P3_Starter/app/controllers/application_controller.rb": {
+      "/home/ubuntu/Project/app/controllers/home_controller.rb": {
         "lines": [
-          0,
-          0,
+          1,
+          1,
           null,
           null,
-          0,
-          0,
-          0,
-          0,
+          1,
           null,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
       },
-      "/home/ubuntu/67272_Creamery_P3_Starter/lib/exceptions.rb": {
+      "/home/ubuntu/Project/lib/exceptions.rb": {
         "lines": [
           0,
           null,
@@ -286,9 +454,9 @@
         }
       }
     },
-    "timestamp": 1584188220
+    "timestamp": 1585860261
   },
-  "Unit Tests": {
+  "Minitest": {
     "coverage": {
       "/home/ubuntu/Project/app/helpers/application_helper.rb": {
         "lines": [
@@ -311,15 +479,12 @@
           null
         ]
       },
-<<<<<<< HEAD
-=======
       "/home/ubuntu/Project/app/helpers/home_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
->>>>>>> controllers
       "/home/ubuntu/Project/app/helpers/stores_helper.rb": {
         "lines": [
           1,
@@ -335,15 +500,9 @@
           1,
           null,
           null,
-<<<<<<< HEAD
-          2,
-          126,
-          4,
-=======
           4,
           139,
           5,
->>>>>>> controllers
           null,
           null,
           null,
@@ -380,11 +539,7 @@
           null,
           1,
           1,
-<<<<<<< HEAD
-          79,
-=======
           98,
->>>>>>> controllers
           null,
           null,
           null
@@ -408,18 +563,6 @@
           null,
           3,
           3,
-<<<<<<< HEAD
-          3,
-          3,
-          3,
-          3,
-          126,
-          4,
-          null,
-          null,
-          1,
-          260,
-=======
           4,
           4,
           3,
@@ -430,7 +573,6 @@
           null,
           1,
           281,
->>>>>>> controllers
           1,
           1,
           1,
@@ -438,19 +580,11 @@
           null,
           null,
           1,
-<<<<<<< HEAD
-          1,
-          null,
-          null,
-          1,
-          1,
-=======
           5,
           null,
           null,
           1,
           4,
->>>>>>> controllers
           null,
           null,
           1,
@@ -462,15 +596,9 @@
           null,
           null,
           1,
-<<<<<<< HEAD
-          112,
-          112,
-          3,
-=======
           127,
           127,
           8,
->>>>>>> controllers
           null,
           null,
           1,
@@ -495,19 +623,11 @@
           null,
           1,
           1,
-<<<<<<< HEAD
-          254,
-          null,
-          null,
-          1,
-          254,
-=======
           273,
           null,
           null,
           1,
           273,
->>>>>>> controllers
           null,
           null,
           null,
@@ -523,16 +643,6 @@
           1,
           null,
           null,
-<<<<<<< HEAD
-          117,
-          5,
-          2,
-          2,
-          2,
-          7,
-          7,
-          3,
-=======
           135,
           6,
           2,
@@ -541,16 +651,11 @@
           9,
           7,
           4,
->>>>>>> controllers
           3,
           null,
           null,
           1,
-<<<<<<< HEAD
-          119,
-=======
           129,
->>>>>>> controllers
           40,
           1,
           1,
@@ -573,41 +678,24 @@
           null,
           1,
           1,
-<<<<<<< HEAD
-          110,
-          110,
-          108,
-=======
           119,
           119,
           117,
->>>>>>> controllers
           null,
           2,
           null,
           null,
           null,
           1,
-<<<<<<< HEAD
-          122,
-          122,
-          8,
-=======
           132,
           132,
           9,
->>>>>>> controllers
           null,
           null,
           null,
           1,
-<<<<<<< HEAD
-          122,
-          122,
-=======
           132,
           132,
->>>>>>> controllers
           8,
           null,
           null,
@@ -620,15 +708,6 @@
           null
         ]
       },
-<<<<<<< HEAD
-      "/home/ubuntu/Project/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          null,
-          0,
-=======
       "/home/ubuntu/Project/app/controllers/assignments_controller.rb": {
         "lines": [
           1,
@@ -652,17 +731,11 @@
           null,
           null,
           1,
->>>>>>> controllers
           0,
           0,
           0,
           null,
-<<<<<<< HEAD
-          0
-        ],
-        "branches": {
-        }
-=======
+          null,
           null,
           1,
           1,
@@ -687,23 +760,6 @@
           1,
           1,
           null,
-          null,
-          null
-        ]
-      },
-      "/home/ubuntu/Project/app/controllers/home_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
           null,
           null
         ]
@@ -813,7 +869,23 @@
           null,
           null
         ]
->>>>>>> controllers
+      },
+      "/home/ubuntu/Project/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
       },
       "/home/ubuntu/Project/lib/exceptions.rb": {
         "lines": [
@@ -840,10 +912,6 @@
         }
       }
     },
-<<<<<<< HEAD
-    "timestamp": 1585588379
-=======
-    "timestamp": 1585859860
->>>>>>> controllers
+    "timestamp": 1586295608
   }
 }
