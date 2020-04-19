@@ -1,3 +1,4 @@
+
 module Minitest
   module Reporters
     class SpecReporter

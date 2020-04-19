@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_07_215646) do
+ActiveRecord::Schema.define(version: 2020_04_19_152448) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer "store_id", null: false
     t.integer "employee_id", null: false
     t.date "start_date"
     t.date "end_date"
+    t.integer "PayGrade_id"
+    t.index ["PayGrade_id"], name: "index_assignments_on_PayGrade_id"
     t.index ["employee_id"], name: "index_assignments_on_employee_id"
     t.index ["store_id"], name: "index_assignments_on_store_id"
   end

@@ -1,10 +1,10 @@
 FactoryBot.define do
   factory :shift do
-    assignment { nil }
-    date { "2020-04-07" }
-    start_time { "2020-04-07 21:48:49" }
-    end_time { "2020-04-07 21:48:49" }
-    notes { "MyText" }
-    status { "MyString" }
+    association :assignment
+    date { Date.current }
+    start_time { Time.local(2000,1,1,11,0,0) }
+    end_time { Time.local(2000,1,1,14,0,0) }
+    status { 'pending' }
+    notes { 'This was a great shift and enjoyed by all who chose to partake.' }
   end
 end

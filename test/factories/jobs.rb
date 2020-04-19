@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :job do
-    name { "MyString" }
-    description { "MyText" }
-    active { false }
+    name { 'Cashier' }
+    description { 'Working the cash register' }
+    active { true }
   end
 end

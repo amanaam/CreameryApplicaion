@@ -1,6 +1,7 @@
 require 'simplecov'
 SimpleCov.start 'rails' do
   add_filter "lib/tasks/"
+  add_filter "lib/exceptions.rb"
   add_filter "app/channels/application_cable/"
   add_filter "app/jobs/"
   add_filter "app/mailers/"
@@ -26,6 +27,19 @@ class ActiveSupport::TestCase
   def deny(condition, msg="")
     # a simple transformation to increase readability IMO
     assert !condition, msg
+  end
+
+  # A method to login in an admin (or manager) to start things off
+  def login_admin
+    @alex = FactoryBot.create(:employee, first_name: "Alex", username: "alex", last_name: "Heimann", role: "admin")
+    get login_path
+    post sessions_path, params: { username: "alex", password: "secret" }
+  end
+
+  def login_manager
+    @ben = FactoryBot.create(:employee, first_name: "Ben", last_name: "Sisko", username: "ben", role: "manager")
+    get login_path
+    post sessions_path, params: { username: "ben", password: "secret" }
   end
 
   # Spruce up minitest results...
