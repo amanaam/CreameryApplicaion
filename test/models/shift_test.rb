@@ -1,5 +1,5 @@
 require 'test_helper'
-
+require 'time_date_helpers'
 class ShiftTest < ActiveSupport::TestCase
   # Matchers
   should belong_to(:assignment)

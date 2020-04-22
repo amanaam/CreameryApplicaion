@@ -31,7 +31,7 @@ class Employee < ApplicationRecord
   validates_confirmation_of :password, message: "does not match"
   validates_length_of :password, :minimum => 4, message: "must be at least 4 characters long", :allow_blank => true
   
-  before_destroy :is_destroyable
+  #before_destroy :is_destroyable
 
   # Other methods
   def name
@@ -112,14 +112,14 @@ class Employee < ApplicationRecord
     self.ssn = self.ssn.to_s.gsub(/[^0-9]/,"")
   end
   
-  def is_destroyable
-      if (self.shifts.past.count == 0)
-          true
-      else
-          make_inactive
-          throw(:abort)
-      end
-  end
+#   def is_destroyable
+#       if (self.shifts.past.empty?)
+#           true
+#       else
+#           make_inactive
+#           throw(:abort)
+#       end
+#   end
 
 
 end

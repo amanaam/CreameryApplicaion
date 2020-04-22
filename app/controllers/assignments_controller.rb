@@ -1,5 +1,6 @@
 class AssignmentsController < ApplicationController
-    
+  before_action :check_login
+  authorize_resource 
   def index
       @current_assignments=Assignment.current.paginate(:page => params[:page]).per_page(5)
       @past_assignments=Assignment.past.paginate(:page => params[:page]).per_page(5)
@@ -33,6 +34,6 @@ class AssignmentsController < ApplicationController
   end
   private
     def assignment_params
-      params.require(:assignment).permit(:store_id, :employee_id, :start_date, :end_date, :pay_grade_id)
+      params.require(:assignment).permit(:store_id, :employee_id, :pay_grade_id, :start_date, :end_date)
     end
 end

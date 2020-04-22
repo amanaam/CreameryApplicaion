@@ -36,6 +36,7 @@ class Assignment < ApplicationRecord
 
   # Callbacks
   before_create :end_previous_assignment
+  before_destroy :is_destroyable
   # before_create :set_start_date_if_not_set
 
   private
@@ -79,7 +80,7 @@ class Assignment < ApplicationRecord
   end
 
   def is_destroyable
-      unless (self.shifts.finished.empty? && self.shifts.started.empty?)
+      if (self.shifts.started.count == 0 and self.shifts.finished.count ==0)
         remove_pending_shifts
         true
       else

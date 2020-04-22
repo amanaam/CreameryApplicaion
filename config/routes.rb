@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  get 'pay_grade_rates/new'
+  get 'pay_grade_rates/edit'
+  get 'pay_grade_rates/show'
+  get 'pay_grade_rates/index'
+  get 'pay_grades/new'
+  get 'pay_grades/edit'
+  get 'pay_grades/show'
+  get 'pay_grades/index'
+  get 'jobs/new'
+  get 'jobs/edit'
+  get 'jobs/show'
+  get 'jobs/index'
+  get 'shifts/new'
+  get 'shifts/edit'
+  get 'shifts/show'
+  get 'shifts/index'
   resources :stores
   resources :employees
   resources :assignments

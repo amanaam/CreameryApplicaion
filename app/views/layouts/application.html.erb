@@ -12,11 +12,17 @@
 
 
   <body>
+      
     <div id = "partials" style="color:white;background-color:black; font-family: Calibri;">
     <!-- Partials for the topbar and navigation -->
     <%= render :partial => "partials/topbar" %>
-    <%= render :partial => "partials/nav" %><br>
+    <% if logged_in? %>
+      <%= render :partial => "partials/nav" %>
+    <% else %>
+      <%= render :partial => "partials/nav_guest" %>
+    <% end %><br>
     </div>
+    
 
   <div class="row" font-family: Calibri;>
       
@@ -25,6 +31,11 @@
     
     <div id="main_content" class="col s7">
         <br>
+        <div class="container">
+            <div class="row">
+              <%= render :partial => "partials/flash" %>
+              </div>
+              </div>
           <!-- MAIN CONTENT GOES HERE -->
           <%= yield %>
     </div>
@@ -33,7 +44,10 @@
     </div>
 
     <div class="col s3 center">
-      <%= render partial: 'partials/quick_links' %>
+    <% if logged_in? %>
+    <%= render partial: 'partials/quick_links' %>
+    <% end %><br>
+      
     </div>
   </div>
 

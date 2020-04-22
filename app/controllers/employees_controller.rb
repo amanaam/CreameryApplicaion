@@ -1,5 +1,7 @@
 class EmployeesController < ApplicationController
   before_action :set_employee, only: [:show, :edit, :update, :details]
+  before_action :check_login
+  authorize_resource 
   def index
       @active_managers = Employee.managers.active.paginate(:page => params[:page]).per_page(5)
       @active_employees = Employee.regulars.active.paginate(:page => params[:page]).per_page(5)

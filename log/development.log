@@ -474,3 +474,29 @@ D, [2020-04-22T13:32:02.410235 #9837] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[
 D, [2020-04-22T13:32:02.410320 #9837] DEBUG -- :   ↳ bin/rails:9
 D, [2020-04-22T13:32:02.411572 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 D, [2020-04-22T13:32:02.411671 #9837] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T18:16:18.576464 #18931]  INFO -- : Started GET "/" for 103.104.213.14 at 2020-04-22 18:16:18 +0000
+I, [2020-04-22T18:16:18.580283 #18931]  INFO -- : Cannot render console from 103.104.213.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2020-04-22T18:16:18.604284 #18931] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T18:16:18.604718 #18931] DEBUG -- :   ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+I, [2020-04-22T18:16:18.617357 #18931]  INFO -- : Processing by HomeController#index as HTML
+I, [2020-04-22T18:16:18.630474 #18931]  INFO -- :   Rendering home/index.html.erb within layouts/application
+I, [2020-04-22T18:16:18.633137 #18931]  INFO -- :   Rendered home/index.html.erb within layouts/application (2.0ms)
+I, [2020-04-22T18:16:19.211693 #18931]  INFO -- :   Rendered partials/_topbar.html.erb (1.1ms)
+I, [2020-04-22T18:16:19.213057 #18931]  INFO -- :   Rendered partials/_nav.html.erb (0.4ms)
+I, [2020-04-22T18:16:19.214636 #18931]  INFO -- :   Rendered partials/_quick_links.html.erb (0.4ms)
+I, [2020-04-22T18:16:19.216193 #18931]  INFO -- :   Rendered partials/_footer.html.erb (0.5ms)
+I, [2020-04-22T18:16:19.217384 #18931]  INFO -- : Completed 200 OK in 600ms (Views: 591.6ms | ActiveRecord: 0.0ms)
+
+
+I, [2020-04-22T18:16:25.312721 #18931]  INFO -- : Started GET "/" for 103.104.213.14 at 2020-04-22 18:16:25 +0000
+I, [2020-04-22T18:16:25.313748 #18931]  INFO -- : Cannot render console from 103.104.213.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2020-04-22T18:16:25.315162 #18931]  INFO -- : Processing by HomeController#index as HTML
+I, [2020-04-22T18:16:25.317883 #18931]  INFO -- :   Rendering home/index.html.erb within layouts/application
+I, [2020-04-22T18:16:25.318472 #18931]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.4ms)
+I, [2020-04-22T18:16:25.391397 #18931]  INFO -- :   Rendered partials/_topbar.html.erb (1.2ms)
+I, [2020-04-22T18:16:25.392738 #18931]  INFO -- :   Rendered partials/_nav.html.erb (0.4ms)
+I, [2020-04-22T18:16:25.394158 #18931]  INFO -- :   Rendered partials/_quick_links.html.erb (0.5ms)
+I, [2020-04-22T18:16:25.395689 #18931]  INFO -- :   Rendered partials/_footer.html.erb (0.5ms)
+I, [2020-04-22T18:16:25.397074 #18931]  INFO -- : Completed 200 OK in 82ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
