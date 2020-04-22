@@ -45,7 +45,9 @@
 
     <div class="col s3 center">
     <% if logged_in? %>
-    <%= render partial: 'partials/quick_links' %>
+        <% if current_user.role?(:admin) %>
+            <%= render partial: 'partials/quick_links' %>
+        <% end %>
     <% end %><br>
       
     </div>

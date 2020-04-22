@@ -3,8 +3,10 @@ class StoresController < ApplicationController
   before_action :check_login
   authorize_resource
   def index
+    unless current_user.role?(:employee)
       @active_stores = Store.active.paginate(:page => params[:page]).per_page(5)
       @inactive_stores = Store.inactive.paginate(:page => params[:page]).per_page(5)
+    end
   end
 
   def edit

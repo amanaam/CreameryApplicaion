@@ -1,0 +1,24 @@
+<%= simple_form_for(@shift) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="form-inputs">
+      <%= f.input :assignment_id, collection: Assignment.chronological.current %>
+      <%= f.label :date %><br />
+      <%= f.text_field :date, prompt: "Date", class: "datepicker", :value => (f.object.date.strftime('%B %d, %Y') if f.object.date != nil) %>
+      <%= f.label :start_time %><br>
+      <%= f.time_field :start_time %>
+      <%= f.label :end_time %><br>
+      <%= f.time_field :end_time %>
+      <%= f.input :notes, label_html: { class: 'active' } %>
+      <%= f.input :status, collection: ['pending','finished','started'] %>   
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-actions col s8">
+      <%= f.submit :class=>"btn waves-effect waves-light" %>
+      <%= link_to 'Cancel', shifts_path, :class => 'waves-effect waves-light btn red' %>
+    </div>
+  </div>
+<% end %>
+            
+            

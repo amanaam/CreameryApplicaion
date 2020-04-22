@@ -1,13 +1,20 @@
 require "test_helper"
 
-describe ShiftsController do
-  it "should get new" do
-    get shifts_new_url
+class AssignmentsControllerTest < ActionDispatch::IntegrationTest
+  setup do
+    login_admin
+  end
+
+  describe ShiftsController do
+    
+    
+  it "should get index" do
+    get shifts_index_url
     value(response).must_be :success?
   end
 
-  it "should get edit" do
-    get shifts_edit_url
+  it "should get new" do
+    get shifts_new_url
     value(response).must_be :success?
   end
 
@@ -16,9 +23,10 @@ describe ShiftsController do
     value(response).must_be :success?
   end
 
-  it "should get index" do
-    get shifts_index_url
+  it "should get edit" do
+    get shifts_edit_url
     value(response).must_be :success?
+  end
   end
 
 end

@@ -1,9 +1,11 @@
 <nav id="nav" style="color:white;background-color:black">
   <div class="col s8">
       <div class="container">
-        <table><tr>
+        <table align="right"><tr>
           <td><h5><%= link_to 'Stores', stores_path %></h5></td>
           <td><h5><%= link_to 'Employees', employees_path %></h5></td>
+          <td><h5><%= link_to 'Shifts', shifts_path %></h5></td>
+          <td><h5><%= link_to 'Jobs', jobs_path %></h5></td>
           <td><h5><%= link_to 'Assignments', assignments_path %></h5></td>
       </div>
   </div>
@@ -12,7 +14,7 @@
   <div class="col s1">
     <div class="container">
                 <td><h5><%= link_to 'Logout', logout_path %></h5></td>
-           </tr></table>
+         </tr></table>
     </div>
   </div>
 </nav>

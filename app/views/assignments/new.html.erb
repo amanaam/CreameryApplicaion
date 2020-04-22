@@ -4,8 +4,10 @@
     <div class="form-inputs">
       <%= f.input :store_id, collection: Store.alphabetical.active %>
       <%= f.input :employee_id, collection: Employee.alphabetical.active %>
-      <%= f.input :start_date, label_html: { class: 'active' } %>
-      <%= f.input :end_date, label_html: { class: 'active' }, include_blank: true  %>
+      <%= f.label :start_date %>
+      <%= f.text_field :start_date, prompt: "Start Date", class: "datepicker", :value => (f.object.start_date.strftime('%B %d, %Y') if f.object.start_date != nil) %>
+      <%= f.label :end_date %>
+      <%= f.text_field :end_date, prompt: "End Date", class: "datepicker", :value => (f.object.end_date.strftime('%B %d, %Y') if f.object.end_date != nil) %>
     </div>
   </div>
   <div class="row">

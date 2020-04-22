@@ -3,7 +3,6 @@ class Employee < ApplicationRecord
   # Relationships
   has_many :assignments
   has_many :stores, through: :assignments
-  has_one :user, dependent: :destroy
   has_many :shifts, through: :assignments
   has_many :pay_grades, through: :assignments
   has_many :pay_grade_rates, through: :pay_grades
@@ -30,8 +29,6 @@ class Employee < ApplicationRecord
   validates_presence_of :password_confirmation, :on => :create 
   validates_confirmation_of :password, message: "does not match"
   validates_length_of :password, :minimum => 4, message: "must be at least 4 characters long", :allow_blank => true
-  
-  #before_destroy :is_destroyable
 
   # Other methods
   def name
@@ -102,6 +99,8 @@ class Employee < ApplicationRecord
   # Callbacks
   before_save :reformat_phone
   before_save :reformat_ssn
+  before_destroy :is_destroyable
+  #after_rollback :make_inactive
 
   private
   def reformat_phone
@@ -112,14 +111,24 @@ class Employee < ApplicationRecord
     self.ssn = self.ssn.to_s.gsub(/[^0-9]/,"")
   end
   
-#   def is_destroyable
-#       if (self.shifts.past.empty?)
-#           true
-#       else
-#           make_inactive
-#           throw(:abort)
-#       end
-#   end
+  def remove_future_shifts
+      f_shifts = Shift.upcoming
+      f_shifts.each do |f|
+          f.delete
+      end
+      self.save!
+  end
+  
+  def is_destroyable
+    if (self.shifts.past.count == 0 and self.shifts.upcoming.count != 0)
+      current_assignment.delete
+      self.save!
+      remove_future_shifts
+      return true
+    else
+      throw(:abort)   
+    end
+  end
 
 
 end

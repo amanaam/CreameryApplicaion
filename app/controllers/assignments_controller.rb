@@ -2,8 +2,13 @@ class AssignmentsController < ApplicationController
   before_action :check_login
   authorize_resource 
   def index
+    unless current_user.role?(:employee)
       @current_assignments=Assignment.current.paginate(:page => params[:page]).per_page(5)
       @past_assignments=Assignment.past.paginate(:page => params[:page]).per_page(5)
+    else
+      @current_assignments=Assignment.for_employee(current_user).current.paginate(:page => params[:page]).per_page(5)
+      @past_assignments=Assignment.past.for_employee(current_user).paginate(:page => params[:page]).per_page(5)
+    end
   end
 
   def new

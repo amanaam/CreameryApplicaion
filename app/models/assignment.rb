@@ -47,14 +47,6 @@ class Assignment < ApplicationRecord
       end
       self.save!
   end
-  
-  def remove_future_shifts
-      f_shifts = Shift.upcoming
-      f_shifts.each do |f|
-          f.delete
-      end
-      self.save!
-  end
 
   def end_previous_assignment
     current_assignment = Employee.find(self.employee_id).current_assignment

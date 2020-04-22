@@ -1,0 +1,18 @@
+<%= simple_form_for(@job) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="form-inputs">
+      <%= f.input :name %>
+      <%= f.input :description, label_html: { class: 'active' } %><br>
+      <%= f.input :active, as: :boolean, boolean_style: :inline %>   
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-actions col s8">
+      <%= f.submit :class=>"btn waves-effect waves-light" %>
+      <%= link_to 'Cancel', jobs_path, :class => 'waves-effect waves-light btn red' %>
+    </div>
+  </div>
+<% end %>
+            
+            

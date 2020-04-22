@@ -2,6 +2,7 @@ require "test_helper"
 
 class EmployeesControllerTest < ActionDispatch::IntegrationTest
   setup do
+    login_admin
     @employee = FactoryBot.create(:employee)
   end
 
@@ -30,7 +31,7 @@ class EmployeesControllerTest < ActionDispatch::IntegrationTest
   test "should create employee when appropriate" do
     # create works
     assert_difference('Employee.count') do
-      post employees_path, params: { employee: { first_name: 'Ezra', last_name: 'Bridger',  ssn: '037201234', phone: '4122683259', date_of_birth: 19.years.ago.to_date, role: 'employee', active: true } }
+      post employees_path, params: { employee: { first_name: 'Ezra', last_name: 'Bridger',  ssn: '037201234', phone: '4122683259', date_of_birth: 19.years.ago.to_date, role: 'employee', active: true, username: 'ezrabr', password: "secret", password_confirmation: "secret"} }
     end
     assert_equal "Successfully added Ezra Bridger as an employee.", flash[:notice]
     assert_redirected_to employee_path(Employee.last)

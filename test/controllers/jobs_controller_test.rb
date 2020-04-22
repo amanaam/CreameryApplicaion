@@ -1,13 +1,13 @@
 require "test_helper"
 
 describe JobsController do
-  it "should get new" do
-    get jobs_new_url
+  it "should get index" do
+    get jobs_index_url
     value(response).must_be :success?
   end
 
-  it "should get edit" do
-    get jobs_edit_url
+  it "should get new" do
+    get jobs_new_url
     value(response).must_be :success?
   end
 
@@ -16,8 +16,8 @@ describe JobsController do
     value(response).must_be :success?
   end
 
-  it "should get index" do
-    get jobs_index_url
+  it "should get edit" do
+    get jobs_edit_url
     value(response).must_be :success?
   end
 

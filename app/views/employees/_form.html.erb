@@ -9,7 +9,11 @@
       <%= f.text_field :date_of_birth, prompt: "Date of Birth", class: "datepicker", :value => (f.object.date_of_birth.strftime('%B %d, %Y') if f.object.date_of_birth != nil) %>
       <%= f.input :phone, label_html: { class: 'active' } %>
       <%= f.input :role, collection: ['admin','manager','employee'] %>
-      <%= f.input :active, as: :boolean, boolean_style: :inline%>    </div>
+      <%= f.input :username, label_html: { class: 'active' } %>
+      <%= f.input :password%>
+      <%= f.input :password_confirmation%>
+      <%= f.input :active, as: :boolean, boolean_style: :inline%>
+    </div>
   </div>
   <div class="row">
     <div class="form-actions col s8">
