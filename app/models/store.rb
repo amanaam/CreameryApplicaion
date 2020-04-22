@@ -3,6 +3,7 @@ class Store < ApplicationRecord
   # Relationships
   has_many :assignments
   has_many :employees, through: :assignments
+  has_many :shifts, through: :assignments 
 
   # Scopes
   scope :alphabetical, -> { order('name') }
@@ -20,6 +21,8 @@ class Store < ApplicationRecord
   validates_format_of :phone, with: /\A\(?\d{3}\)?[-. ]?\d{3}[-.]?\d{4}\z/, message: "should be 10 digits (area code needed) and delimited with dashes only"
   # make sure stores have unique names (case insensitive)
   validates_uniqueness_of :name, case_sensitive: false
+  
+  before_destroy :is_destroyable
 
   # Other methods
   def make_active
@@ -38,13 +41,14 @@ class Store < ApplicationRecord
   # Misc Constants
   STATES_LIST = [['Ohio', 'OH'],['Pennsylvania', 'PA'],['West Virginia', 'WV']]
 
-  def certify_autograde
-    return -3554384015922413861
-  end
 
   private
   def reformat_phone
     self.phone = self.phone.to_s.gsub(/[^0-9]/,"")
+  end
+  
+  def is_destroyable
+    throw(:abort)
   end
 
 end

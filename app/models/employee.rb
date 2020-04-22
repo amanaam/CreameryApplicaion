@@ -25,11 +25,13 @@ class Employee < ApplicationRecord
   validates_format_of :ssn, with: /\A\d{3}[- ]?\d{2}[- ]?\d{4}\z/, message: 'should be 9 digits and delimited with dashes only'
   validates_uniqueness_of :ssn
   validates_inclusion_of :role, in: %w[admin manager employee], message: 'is not an option'
-  validates_uniqueness_of :username
+  validates_uniqueness_of :username, :case_sensitive => false
   validates_presence_of :password, :on => :create 
   validates_presence_of :password_confirmation, :on => :create 
   validates_confirmation_of :password, message: "does not match"
   validates_length_of :password, :minimum => 4, message: "must be at least 4 characters long", :allow_blank => true
+  
+  before_destroy :is_destroyable
 
   # Other methods
   def name
@@ -108,6 +110,15 @@ class Employee < ApplicationRecord
 
   def reformat_ssn
     self.ssn = self.ssn.to_s.gsub(/[^0-9]/,"")
+  end
+  
+  def is_destroyable
+      if (self.shifts.past.count == 0)
+          true
+      else
+          make_inactive
+          throw(:abort)
+      end
   end
 
 

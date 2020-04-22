@@ -16,9 +16,10 @@ class Assignment < ApplicationRecord
   scope :for_employee,  ->(employee) { where("employee_id = ?", employee.id) }
   scope :for_role,      ->(role) { joins(:employee).where("role = ?", role) }
   scope :for_date,      ->(date) { where("start_date <= ? AND (end_date > ? OR end_date IS NULL)", date, date) }
+  scope :for_pay_grade, ->(pay_grade) { joins(:pay_grade).where("pay_grade_id = ?", pay_grade.id) }
 
   # Validations
-  validates_presence_of :store_id, :employee_id, :start_date
+  validates_presence_of :store_id, :employee_id, :start_date, :pay_grade_id
   validates_date :start_date, on_or_before: ->{ Date.current }, on_or_before_message: "cannot be in the future"
   validates_date :end_date, after: :start_date, on_or_before: ->{ Date.current }, allow_blank: true
   validate :employee_is_active_in_system
@@ -28,6 +29,7 @@ class Assignment < ApplicationRecord
   def terminate
     return false unless self.end_date.nil?
     self.start_date = Date.current
+    remove_pending_shifts
     end_previous_assignment
     self.reload
   end
@@ -37,6 +39,22 @@ class Assignment < ApplicationRecord
   # before_create :set_start_date_if_not_set
 
   private
+  def remove_pending_shifts
+      p_shifts = Shift.pending
+      p_shifts.each do |p|
+          p.delete
+      end
+      self.save!
+  end
+  
+  def remove_future_shifts
+      f_shifts = Shift.upcoming
+      f_shifts.each do |f|
+          f.delete
+      end
+      self.save!
+  end
+
   def end_previous_assignment
     current_assignment = Employee.find(self.employee_id).current_assignment
     if current_assignment.nil?
@@ -60,6 +78,14 @@ class Assignment < ApplicationRecord
     end
   end
 
+  def is_destroyable
+      unless (self.shifts.finished.empty? && self.shifts.started.empty?)
+        remove_pending_shifts
+        true
+      else
+        throw(:abort)
+    end
+  end
   # def set_start_date_if_not_set
   #   return true unless self.start_date.nil?
   #   self.start_date = Date.current
