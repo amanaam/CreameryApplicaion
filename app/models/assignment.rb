@@ -3,6 +3,8 @@ class Assignment < ApplicationRecord
   # Relationships
   belongs_to :store
   belongs_to :employee
+  has_many :shifts
+  belongs_to :pay_grade
 
   # Scopes
   scope :current,       -> { where('end_date IS NULL') }
@@ -28,10 +30,6 @@ class Assignment < ApplicationRecord
     self.start_date = Date.current
     end_previous_assignment
     self.reload
-  end
-
-  def certify_autograde
-    return -3554384015922413861
   end
 
   # Callbacks

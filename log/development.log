@@ -22,3 +22,455 @@ D, [2020-04-19T15:24:59.419474 #22140] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m
 D, [2020-04-19T15:24:59.419592 #22140] DEBUG -- :   ↳ bin/rails:9
 D, [2020-04-19T15:24:59.420782 #22140] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 D, [2020-04-19T15:24:59.420910 #22140] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.744466 #3101] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:07:21.744715 #3101] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T12:07:21.745138 #3101]  INFO -- : Migrating to AddUsernameToEmployee (20200422120528)
+D, [2020-04-22T12:07:21.747761 #3101] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:07:21.747954 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.749223 #3101] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "employees" ADD "username" varchar[0m
+D, [2020-04-22T12:07:21.749415 #3101] DEBUG -- :   ↳ db/migrate/20200422120528_add_username_to_employee.rb:3
+D, [2020-04-22T12:07:21.753794 #3101] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422120528"]]
+D, [2020-04-22T12:07:21.754386 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.760518 #3101] DEBUG -- :   [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:07:21.761454 #3101] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T12:07:21.762155 #3101]  INFO -- : Migrating to AddPasswordDigestToEmployee (20200422120605)
+D, [2020-04-22T12:07:21.763025 #3101] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:07:21.763179 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.764455 #3101] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "employees" ADD "password_digest" varchar[0m
+D, [2020-04-22T12:07:21.764589 #3101] DEBUG -- :   ↳ db/migrate/20200422120605_add_password_digest_to_employee.rb:3
+D, [2020-04-22T12:07:21.766616 #3101] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422120605"]]
+D, [2020-04-22T12:07:21.766775 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.771203 #3101] DEBUG -- :   [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:07:21.772149 #3101] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T12:07:21.772552 #3101]  INFO -- : Migrating to AddPayGradeToAssignment (20200422120650)
+D, [2020-04-22T12:07:21.773471 #3101] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:07:21.773619 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.774805 #3101] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "assignments" ADD "pay_grade_id" integer[0m
+D, [2020-04-22T12:07:21.775478 #3101] DEBUG -- :   ↳ db/migrate/20200422120650_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T12:07:21.776197 #3101] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T12:07:21.776365 #3101] DEBUG -- :   ↳ db/migrate/20200422120650_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T12:07:21.782747 #3101] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_pay_grade_id" ON "assignments" ("pay_grade_id")[0m
+D, [2020-04-22T12:07:21.782882 #3101] DEBUG -- :   ↳ db/migrate/20200422120650_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T12:07:21.784227 #3101] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422120650"]]
+D, [2020-04-22T12:07:21.784396 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.791358 #3101] DEBUG -- :   [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:07:21.791457 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.795068 #3101] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T12:07:21.795155 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.802690 #3101] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:07:21.802777 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.803439 #3101] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:07:21.803520 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:07:21.804653 #3101] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:07:21.804742 #3101] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:12:30.888930 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:12:30.889098 #3613] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T12:12:30.889400 #3613]  INFO -- : Migrating to RemovePayGradeFromAssignment (20200422121222)
+D, [2020-04-22T12:12:30.891601 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:12:30.891697 #3613] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:12:30.894559 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T12:12:30.894671 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.895330 #3613] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aassignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL, "PayGrade_id" integer DEFAULT NULL, "pay_grade_id" integer DEFAULT NULL)[0m
+D, [2020-04-22T12:12:30.895422 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.900411 #3613] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_pay_grade_id" ON "aassignments" ("pay_grade_id")[0m
+D, [2020-04-22T12:12:30.900505 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.902157 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_PayGrade_id" ON "aassignments" ("PayGrade_id")[0m
+D, [2020-04-22T12:12:30.902285 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.903931 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_employee_id" ON "aassignments" ("employee_id")[0m
+D, [2020-04-22T12:12:30.904089 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.905757 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_store_id" ON "aassignments" ("store_id")[0m
+D, [2020-04-22T12:12:30.905856 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.911657 #3613] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "aassignments" ("id","store_id","employee_id","start_date","end_date","PayGrade_id","pay_grade_id")
+                     SELECT "id","store_id","employee_id","start_date","end_date","PayGrade_id","pay_grade_id" FROM "assignments"[0m
+D, [2020-04-22T12:12:30.911752 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.914431 #3613] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE "assignments"[0m
+D, [2020-04-22T12:12:30.914523 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.916602 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "assignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL, "pay_grade_id" integer DEFAULT NULL)[0m
+D, [2020-04-22T12:12:30.916701 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.921684 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_store_id" ON "assignments" ("store_id")[0m
+D, [2020-04-22T12:12:30.921786 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.924397 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_employee_id" ON "assignments" ("employee_id")[0m
+D, [2020-04-22T12:12:30.924506 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.933477 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_pay_grade_id" ON "assignments" ("pay_grade_id")[0m
+D, [2020-04-22T12:12:30.933589 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.935553 #3613] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "assignments" ("id","store_id","employee_id","start_date","end_date","pay_grade_id")
+                     SELECT "id","store_id","employee_id","start_date","end_date","pay_grade_id" FROM "aassignments"[0m
+D, [2020-04-22T12:12:30.935651 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.936116 #3613] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aassignments"[0m
+D, [2020-04-22T12:12:30.936213 #3613] DEBUG -- :   ↳ db/migrate/20200422121222_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:12:30.938697 #3613] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422121222"]]
+D, [2020-04-22T12:12:30.938866 #3613] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:12:30.944750 #3613] DEBUG -- :   [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:12:30.944843 #3613] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:12:30.948209 #3613] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T12:12:30.948308 #3613] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:12:30.952945 #3613] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:12:30.953045 #3613] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:12:30.953738 #3613] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:12:30.953898 #3613] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:12:30.955089 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:12:30.955242 #3613] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:32:24.913418 #5063] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:32:24.913750 #5063] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:32:24.917137 #5063] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T12:32:24.917267 #5063] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:32:24.921568 #5063] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:32:24.921656 #5063] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:32:24.922511 #5063] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:32:24.922590 #5063] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:32:24.923806 #5063] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:32:24.923940 #5063] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:33:44.890560 #5253] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:33:44.890713 #5253] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T12:33:44.891001 #5253]  INFO -- : Migrating to RemovePayGradeFromAssignment (20200422123256)
+D, [2020-04-22T12:33:44.892576 #5253] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:33:44.892668 #5253] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:33:44.896981 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T12:33:44.897068 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.897678 #5253] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aassignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL, "pay_grade_id" integer DEFAULT NULL)[0m
+D, [2020-04-22T12:33:44.897758 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.901887 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_pay_grade_id" ON "aassignments" ("pay_grade_id")[0m
+D, [2020-04-22T12:33:44.901973 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.903639 #5253] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_employee_id" ON "aassignments" ("employee_id")[0m
+D, [2020-04-22T12:33:44.903720 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.905370 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_store_id" ON "aassignments" ("store_id")[0m
+D, [2020-04-22T12:33:44.905447 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.908406 #5253] DEBUG -- :   [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "aassignments" ("id","store_id","employee_id","start_date","end_date","pay_grade_id")
+                     SELECT "id","store_id","employee_id","start_date","end_date","pay_grade_id" FROM "assignments"[0m
+D, [2020-04-22T12:33:44.908491 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.911435 #5253] DEBUG -- :   [1m[35m (2.6ms)[0m  [1m[35mDROP TABLE "assignments"[0m
+D, [2020-04-22T12:33:44.911530 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.917514 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "assignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL)[0m
+D, [2020-04-22T12:33:44.918042 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.922136 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_store_id" ON "assignments" ("store_id")[0m
+D, [2020-04-22T12:33:44.922228 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.924661 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_employee_id" ON "assignments" ("employee_id")[0m
+D, [2020-04-22T12:33:44.924741 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.927129 #5253] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "assignments" ("id","store_id","employee_id","start_date","end_date")
+                     SELECT "id","store_id","employee_id","start_date","end_date" FROM "aassignments"[0m
+D, [2020-04-22T12:33:44.927215 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.927682 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aassignments"[0m
+D, [2020-04-22T12:33:44.927758 #5253] DEBUG -- :   ↳ db/migrate/20200422123256_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.931275 #5253] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422123256"]]
+D, [2020-04-22T12:33:44.931405 #5253] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:33:44.938115 #5253] DEBUG -- :   [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:33:44.938667 #5253] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T12:33:44.938907 #5253]  INFO -- : Migrating to RemovePaygradeFromAssignment (20200422123331)
+D, [2020-04-22T12:33:44.939321 #5253] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:33:44.939400 #5253] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:33:44.947306 #5253] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aassignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL)[0m
+D, [2020-04-22T12:33:44.947392 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.950980 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_employee_id" ON "aassignments" ("employee_id")[0m
+D, [2020-04-22T12:33:44.951065 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.952774 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_store_id" ON "aassignments" ("store_id")[0m
+D, [2020-04-22T12:33:44.952864 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.954702 #5253] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "aassignments" ("id","store_id","employee_id","start_date","end_date")
+                     SELECT "id","store_id","employee_id","start_date","end_date" FROM "assignments"[0m
+D, [2020-04-22T12:33:44.954780 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.957151 #5253] DEBUG -- :   [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE "assignments"[0m
+D, [2020-04-22T12:33:44.957268 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.959514 #5253] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "assignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL)[0m
+D, [2020-04-22T12:33:44.959606 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.963848 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_store_id" ON "assignments" ("store_id")[0m
+D, [2020-04-22T12:33:44.963919 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.966718 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_employee_id" ON "assignments" ("employee_id")[0m
+D, [2020-04-22T12:33:44.966796 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.968637 #5253] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "assignments" ("id","store_id","employee_id","start_date","end_date")
+                     SELECT "id","store_id","employee_id","start_date","end_date" FROM "aassignments"[0m
+D, [2020-04-22T12:33:44.968713 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.969133 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aassignments"[0m
+D, [2020-04-22T12:33:44.969223 #5253] DEBUG -- :   ↳ db/migrate/20200422123331_remove_paygrade_from_assignment.rb:3
+D, [2020-04-22T12:33:44.971240 #5253] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422123331"]]
+D, [2020-04-22T12:33:44.971329 #5253] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:33:44.976967 #5253] DEBUG -- :   [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:33:44.977061 #5253] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:33:44.980142 #5253] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T12:33:44.980227 #5253] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:33:44.984349 #5253] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:33:44.984432 #5253] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:33:44.985017 #5253] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:33:44.985094 #5253] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:33:44.986328 #5253] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:33:44.986475 #5253] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:34:20.362945 #5330] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:34:20.363308 #5330] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:34:20.368703 #5330] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T12:34:20.368949 #5330] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:34:20.377295 #5330] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:34:20.377465 #5330] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:34:20.378853 #5330] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:34:20.378994 #5330] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:34:20.381156 #5330] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:34:20.381401 #5330] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:35:10.092847 #5442] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:35:10.093830 #5442] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T12:35:10.094076 #5442]  INFO -- : Migrating to AddPayGradeToAssignment (20200422123459)
+D, [2020-04-22T12:35:10.096250 #5442] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:35:10.096339 #5442] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:35:10.097259 #5442] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "assignments" ADD "pay_grade_id" integer[0m
+D, [2020-04-22T12:35:10.097412 #5442] DEBUG -- :   ↳ db/migrate/20200422123459_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T12:35:10.098708 #5442] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T12:35:10.098787 #5442] DEBUG -- :   ↳ db/migrate/20200422123459_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T12:35:10.101711 #5442] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_pay_grade_id" ON "assignments" ("pay_grade_id")[0m
+D, [2020-04-22T12:35:10.101787 #5442] DEBUG -- :   ↳ db/migrate/20200422123459_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T12:35:10.104118 #5442] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422123459"]]
+D, [2020-04-22T12:35:10.104236 #5442] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:35:10.110663 #5442] DEBUG -- :   [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:35:10.110790 #5442] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:35:10.113676 #5442] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T12:35:10.113794 #5442] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:35:10.118482 #5442] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T12:35:10.118611 #5442] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:35:10.119364 #5442] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T12:35:10.119477 #5442] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T12:35:10.120833 #5442] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T12:35:10.120942 #5442] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:13:53.786690 #8188] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:13:53.787423 #8188] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T13:13:53.787903 #8188]  INFO -- : Migrating to RemovePayGradeFromAssignment (20200422124329)
+D, [2020-04-22T13:13:53.790711 #8188] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:13:53.790816 #8188] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:13:53.794388 #8188] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T13:13:53.794478 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.795071 #8188] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aassignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL, "pay_grade_id" integer DEFAULT NULL)[0m
+D, [2020-04-22T13:13:53.795152 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.799418 #8188] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_pay_grade_id" ON "aassignments" ("pay_grade_id")[0m
+D, [2020-04-22T13:13:53.799500 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.801259 #8188] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_employee_id" ON "aassignments" ("employee_id")[0m
+D, [2020-04-22T13:13:53.801393 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.803134 #8188] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_store_id" ON "aassignments" ("store_id")[0m
+D, [2020-04-22T13:13:53.803219 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.806525 #8188] DEBUG -- :   [1m[35m (2.1ms)[0m  [1m[32mINSERT INTO "aassignments" ("id","store_id","employee_id","start_date","end_date","pay_grade_id")
+                     SELECT "id","store_id","employee_id","start_date","end_date","pay_grade_id" FROM "assignments"[0m
+D, [2020-04-22T13:13:53.806644 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.812308 #8188] DEBUG -- :   [1m[35m (5.3ms)[0m  [1m[35mDROP TABLE "assignments"[0m
+D, [2020-04-22T13:13:53.812415 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.815017 #8188] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "assignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL)[0m
+D, [2020-04-22T13:13:53.815122 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.820313 #8188] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_store_id" ON "assignments" ("store_id")[0m
+D, [2020-04-22T13:13:53.820795 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.823881 #8188] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_employee_id" ON "assignments" ("employee_id")[0m
+D, [2020-04-22T13:13:53.824012 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.826810 #8188] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "assignments" ("id","store_id","employee_id","start_date","end_date")
+                     SELECT "id","store_id","employee_id","start_date","end_date" FROM "aassignments"[0m
+D, [2020-04-22T13:13:53.826897 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.827393 #8188] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aassignments"[0m
+D, [2020-04-22T13:13:53.827512 #8188] DEBUG -- :   ↳ db/migrate/20200422124329_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:13:53.830116 #8188] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422124329"]]
+D, [2020-04-22T13:13:53.830227 #8188] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:13:53.836555 #8188] DEBUG -- :   [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:13:53.836791 #8188] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:13:53.842706 #8188] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T13:13:53.842898 #8188] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:13:53.850582 #8188] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:13:53.850762 #8188] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:13:53.852004 #8188] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:13:53.852154 #8188] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:13:53.854406 #8188] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:13:53.854564 #8188] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:14:27.659555 #8268] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:14:27.659786 #8268] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T13:14:27.660250 #8268]  INFO -- : Migrating to AddPayGradeToAssignments (20200422131416)
+D, [2020-04-22T13:14:27.663709 #8268] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:14:27.663895 #8268] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:14:27.666147 #8268] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "assignments" ADD "pay_grade_id" integer[0m
+D, [2020-04-22T13:14:27.666287 #8268] DEBUG -- :   ↳ db/migrate/20200422131416_add_pay_grade_to_assignments.rb:3
+D, [2020-04-22T13:14:27.668985 #8268] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T13:14:27.669325 #8268] DEBUG -- :   ↳ db/migrate/20200422131416_add_pay_grade_to_assignments.rb:3
+D, [2020-04-22T13:14:27.675259 #8268] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_pay_grade_id" ON "assignments" ("pay_grade_id")[0m
+D, [2020-04-22T13:14:27.675516 #8268] DEBUG -- :   ↳ db/migrate/20200422131416_add_pay_grade_to_assignments.rb:3
+D, [2020-04-22T13:14:27.680369 #8268] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422131416"]]
+D, [2020-04-22T13:14:27.680800 #8268] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:14:27.688294 #8268] DEBUG -- :   [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:14:27.688392 #8268] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:14:27.693678 #8268] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T13:14:27.693871 #8268] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:14:27.701355 #8268] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:14:27.701545 #8268] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:14:27.702686 #8268] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:14:27.702868 #8268] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:14:27.704987 #8268] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:14:27.705167 #8268] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:21:40.191835 #8845] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:21:40.192674 #8845] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T13:21:40.192954 #8845]  INFO -- : Migrating to AddPayGradeToAssignment (20200422132038)
+D, [2020-04-22T13:21:40.195521 #8845] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:21:40.195607 #8845] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:21:40.196617 #8845] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "assignments" ADD "Pay_Grade_id" integer[0m
+D, [2020-04-22T13:21:40.196721 #8845] DEBUG -- :   ↳ db/migrate/20200422132038_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T13:21:40.197606 #8845] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+D, [2020-04-22T13:21:40.197702 #8845] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:12.714709 #8917] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:22:12.714861 #8917] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T13:22:12.715112 #8917]  INFO -- : Migrating to RemovePayGradeFromAssignments (20200422132128)
+D, [2020-04-22T13:22:12.716724 #8917] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:22:12.716844 #8917] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:12.720230 #8917] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T13:22:12.720321 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.720857 #8917] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aassignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL, "pay_grade_id" integer DEFAULT NULL)[0m
+D, [2020-04-22T13:22:12.720971 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.728508 #8917] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_pay_grade_id" ON "aassignments" ("pay_grade_id")[0m
+D, [2020-04-22T13:22:12.728611 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.730352 #8917] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_employee_id" ON "aassignments" ("employee_id")[0m
+D, [2020-04-22T13:22:12.730441 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.732136 #8917] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_store_id" ON "aassignments" ("store_id")[0m
+D, [2020-04-22T13:22:12.732229 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.736850 #8917] DEBUG -- :   [1m[35m (3.5ms)[0m  [1m[32mINSERT INTO "aassignments" ("id","store_id","employee_id","start_date","end_date","pay_grade_id")
+                     SELECT "id","store_id","employee_id","start_date","end_date","pay_grade_id" FROM "assignments"[0m
+D, [2020-04-22T13:22:12.736935 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.743459 #8917] DEBUG -- :   [1m[35m (6.1ms)[0m  [1m[35mDROP TABLE "assignments"[0m
+D, [2020-04-22T13:22:12.743667 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.751647 #8917] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "assignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL)[0m
+D, [2020-04-22T13:22:12.751747 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.755883 #8917] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_store_id" ON "assignments" ("store_id")[0m
+D, [2020-04-22T13:22:12.755987 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.758707 #8917] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_employee_id" ON "assignments" ("employee_id")[0m
+D, [2020-04-22T13:22:12.758795 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.761248 #8917] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "assignments" ("id","store_id","employee_id","start_date","end_date")
+                     SELECT "id","store_id","employee_id","start_date","end_date" FROM "aassignments"[0m
+D, [2020-04-22T13:22:12.761334 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.761783 #8917] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aassignments"[0m
+D, [2020-04-22T13:22:12.761867 #8917] DEBUG -- :   ↳ db/migrate/20200422132128_remove_pay_grade_from_assignments.rb:3
+D, [2020-04-22T13:22:12.764261 #8917] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422132128"]]
+D, [2020-04-22T13:22:12.764380 #8917] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:12.770787 #8917] DEBUG -- :   [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:22:12.771473 #8917] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:12.779333 #8917] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T13:22:12.779438 #8917] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:12.783476 #8917] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:22:12.783566 #8917] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:12.784249 #8917] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:22:12.784333 #8917] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:12.785650 #8917] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:22:12.785740 #8917] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:27.464372 #8972] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:22:27.464544 #8972] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T13:22:27.464958 #8972]  INFO -- : Migrating to AddPayGradeToAssignment (20200422132222)
+D, [2020-04-22T13:22:27.466900 #8972] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:22:27.467031 #8972] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:27.468121 #8972] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "assignments" ADD "Pay_Grade_id" integer[0m
+D, [2020-04-22T13:22:27.468236 #8972] DEBUG -- :   ↳ db/migrate/20200422132222_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T13:22:27.469904 #8972] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T13:22:27.470021 #8972] DEBUG -- :   ↳ db/migrate/20200422132222_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T13:22:27.473601 #8972] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_Pay_Grade_id" ON "assignments" ("Pay_Grade_id")[0m
+D, [2020-04-22T13:22:27.473773 #8972] DEBUG -- :   ↳ db/migrate/20200422132222_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T13:22:27.476800 #8972] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422132222"]]
+D, [2020-04-22T13:22:27.476950 #8972] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:27.484570 #8972] DEBUG -- :   [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:22:27.484765 #8972] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:27.490556 #8972] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T13:22:27.490869 #8972] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:27.499018 #8972] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:22:27.499399 #8972] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:27.500577 #8972] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:22:27.500751 #8972] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:22:27.503033 #8972] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:22:27.503214 #8972] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:25:31.898089 #9294] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:25:31.899050 #9294] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T13:25:31.899366 #9294]  INFO -- : Migrating to RemovePayGradeFromAssignment (20200422132444)
+D, [2020-04-22T13:25:31.901987 #9294] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:25:31.902088 #9294] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:25:31.904799 #9294] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T13:25:31.904902 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.905464 #9294] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aassignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL, "Pay_Grade_id" integer DEFAULT NULL)[0m
+D, [2020-04-22T13:25:31.905556 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.909586 #9294] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_Pay_Grade_id" ON "aassignments" ("Pay_Grade_id")[0m
+D, [2020-04-22T13:25:31.909687 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.911339 #9294] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_employee_id" ON "aassignments" ("employee_id")[0m
+D, [2020-04-22T13:25:31.911461 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.913236 #9294] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_store_id" ON "aassignments" ("store_id")[0m
+D, [2020-04-22T13:25:31.913341 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.915191 #9294] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "aassignments" ("id","store_id","employee_id","start_date","end_date","Pay_Grade_id")
+                     SELECT "id","store_id","employee_id","start_date","end_date","Pay_Grade_id" FROM "assignments"[0m
+D, [2020-04-22T13:25:31.915277 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.919730 #9294] DEBUG -- :   [1m[35m (4.1ms)[0m  [1m[35mDROP TABLE "assignments"[0m
+D, [2020-04-22T13:25:31.920062 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.924871 #9294] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "assignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL)[0m
+D, [2020-04-22T13:25:31.925060 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.934222 #9294] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_store_id" ON "assignments" ("store_id")[0m
+D, [2020-04-22T13:25:31.934389 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.939627 #9294] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_employee_id" ON "assignments" ("employee_id")[0m
+D, [2020-04-22T13:25:31.939791 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.944774 #9294] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "assignments" ("id","store_id","employee_id","start_date","end_date")
+                     SELECT "id","store_id","employee_id","start_date","end_date" FROM "aassignments"[0m
+D, [2020-04-22T13:25:31.945149 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.946219 #9294] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aassignments"[0m
+D, [2020-04-22T13:25:31.946366 #9294] DEBUG -- :   ↳ db/migrate/20200422132444_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:25:31.950537 #9294] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422132444"]]
+D, [2020-04-22T13:25:31.950792 #9294] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:25:31.966532 #9294] DEBUG -- :   [1m[35m (15.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:25:31.966684 #9294] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T13:25:31.967025 #9294]  INFO -- : Migrating to AddPayGradeToAssignment (20200422132522)
+D, [2020-04-22T13:25:31.967651 #9294] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:25:31.967760 #9294] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:25:31.968769 #9294] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "assignments" ADD "pay_grade_id" integer[0m
+D, [2020-04-22T13:25:31.968887 #9294] DEBUG -- :   ↳ db/migrate/20200422132522_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T13:25:31.972473 #9294] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_pay_grade_id" ON "assignments" ("pay_grade_id")[0m
+D, [2020-04-22T13:25:31.973476 #9294] DEBUG -- :   ↳ db/migrate/20200422132522_add_pay_grade_to_assignment.rb:3
+D, [2020-04-22T13:25:31.975772 #9294] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422132522"]]
+D, [2020-04-22T13:25:31.975983 #9294] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:25:31.983792 #9294] DEBUG -- :   [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:25:31.983980 #9294] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:25:31.989634 #9294] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T13:25:31.989904 #9294] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:25:31.999804 #9294] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:25:32.000027 #9294] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:25:32.001441 #9294] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:25:32.001610 #9294] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:25:32.004103 #9294] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:25:32.004280 #9294] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:32:02.328798 #9837] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:32:02.330595 #9837] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T13:32:02.331026 #9837]  INFO -- : Migrating to RemovePayGradeFromAssignment (20200422133121)
+D, [2020-04-22T13:32:02.333461 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:32:02.333629 #9837] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:32:02.337005 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-04-22T13:32:02.337132 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.337745 #9837] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aassignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL, "pay_grade_id" integer DEFAULT NULL)[0m
+D, [2020-04-22T13:32:02.337832 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.342352 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_pay_grade_id" ON "aassignments" ("pay_grade_id")[0m
+D, [2020-04-22T13:32:02.342441 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.344101 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_employee_id" ON "aassignments" ("employee_id")[0m
+D, [2020-04-22T13:32:02.344186 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.345886 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_aassignments_on_store_id" ON "aassignments" ("store_id")[0m
+D, [2020-04-22T13:32:02.345970 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.349487 #9837] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "aassignments" ("id","store_id","employee_id","start_date","end_date","pay_grade_id")
+                     SELECT "id","store_id","employee_id","start_date","end_date","pay_grade_id" FROM "assignments"[0m
+D, [2020-04-22T13:32:02.349569 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.354122 #9837] DEBUG -- :   [1m[35m (4.2ms)[0m  [1m[35mDROP TABLE "assignments"[0m
+D, [2020-04-22T13:32:02.354609 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.360873 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "assignments" ("id" integer NOT NULL PRIMARY KEY, "store_id" integer NOT NULL, "employee_id" integer NOT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL)[0m
+D, [2020-04-22T13:32:02.360975 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.365154 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_store_id" ON "assignments" ("store_id")[0m
+D, [2020-04-22T13:32:02.365299 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.367910 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_employee_id" ON "assignments" ("employee_id")[0m
+D, [2020-04-22T13:32:02.368019 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.370551 #9837] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "assignments" ("id","store_id","employee_id","start_date","end_date")
+                     SELECT "id","store_id","employee_id","start_date","end_date" FROM "aassignments"[0m
+D, [2020-04-22T13:32:02.370669 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.371145 #9837] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aassignments"[0m
+D, [2020-04-22T13:32:02.371231 #9837] DEBUG -- :   ↳ db/migrate/20200422133121_remove_pay_grade_from_assignment.rb:3
+D, [2020-04-22T13:32:02.374107 #9837] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422133121"]]
+D, [2020-04-22T13:32:02.374228 #9837] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:32:02.383798 #9837] DEBUG -- :   [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:32:02.383954 #9837] DEBUG -- :   ↳ bin/rails:9
+I, [2020-04-22T13:32:02.384321 #9837]  INFO -- : Migrating to AddPayGradeToAssignments (20200422133152)
+D, [2020-04-22T13:32:02.385160 #9837] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:32:02.385330 #9837] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:32:02.386405 #9837] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "assignments" ADD "pay_grade_id" integer[0m
+D, [2020-04-22T13:32:02.386556 #9837] DEBUG -- :   ↳ db/migrate/20200422133152_add_pay_grade_to_assignments.rb:3
+D, [2020-04-22T13:32:02.394548 #9837] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_assignments_on_pay_grade_id" ON "assignments" ("pay_grade_id")[0m
+D, [2020-04-22T13:32:02.395378 #9837] DEBUG -- :   ↳ db/migrate/20200422133152_add_pay_grade_to_assignments.rb:3
+D, [2020-04-22T13:32:02.396467 #9837] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200422133152"]]
+D, [2020-04-22T13:32:02.396564 #9837] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:32:02.400817 #9837] DEBUG -- :   [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:32:02.401797 #9837] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:32:02.404706 #9837] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-04-22T13:32:02.404798 #9837] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:32:02.409540 #9837] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-04-22T13:32:02.409631 #9837] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:32:02.410235 #9837] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-04-22T13:32:02.410320 #9837] DEBUG -- :   ↳ bin/rails:9
+D, [2020-04-22T13:32:02.411572 #9837] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-04-22T13:32:02.411671 #9837] DEBUG -- :   ↳ bin/rails:9

@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_19_152448) do
+ActiveRecord::Schema.define(version: 2020_04_22_133152) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer "store_id", null: false
     t.integer "employee_id", null: false
     t.date "start_date"
     t.date "end_date"
-    t.integer "PayGrade_id"
-    t.index ["PayGrade_id"], name: "index_assignments_on_PayGrade_id"
+    t.integer "pay_grade_id"
     t.index ["employee_id"], name: "index_assignments_on_employee_id"
+    t.index ["pay_grade_id"], name: "index_assignments_on_pay_grade_id"
     t.index ["store_id"], name: "index_assignments_on_store_id"
   end
 
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2020_04_19_152448) do
     t.string "phone"
     t.string "role"
     t.boolean "active"
+    t.string "username"
+    t.string "password_digest"
   end
 
   create_table "jobs", force: :cascade do |t|

@@ -33,6 +33,6 @@ class AssignmentsController < ApplicationController
   end
   private
     def assignment_params
-      params.require(:assignment).permit(:store_id, :employee_id, :start_date, :end_date)
+      params.require(:assignment).permit(:store_id, :employee_id, :start_date, :end_date, :pay_grade_id)
     end
 end
