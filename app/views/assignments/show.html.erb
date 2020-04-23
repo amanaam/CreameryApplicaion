@@ -1,0 +1,91 @@
+<h4>Assignment Details</h4>
+<table class="striped" border = 1>
+<tr><td>
+  <b>Store:</b></td><td>
+  <%= link_to @assignment.store.name, store_path(@assignment.store) %>
+</td></tr>
+
+<tr><td>
+  <b>Employee:</b></td><td>
+  <%= link_to @assignment.employee.name, employee_path(@assignment.employee) %>
+</td></tr>
+
+<tr><td>
+  <b>Start Date:</b></td><td>
+  <%= @assignment.start_date.strftime('%b %d, %Y') %>
+</td></tr>
+
+<tr><td>
+  <b>End Date:</b></td><td>
+  <%= if @assignment.start_date.nil?; 'present' else @assignment.end_date end %>
+</td></tr>
+
+<tr><td>
+  <b>Pay Grade:</b></td><td>
+  <%= link_to @assignment.pay_grade.level, pay_grade_path(@assignment.pay_grade) %>
+</td></tr>
+
+</table>
+<br>
+<br>
+<div style="background-color:white">
+<h4>Upcoming Shifts</h4>
+<% if (@upcoming_shifts).empty? %>
+<h5>There are no upcoming shifts at this time</h5>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>date</th>
+        <th>Time</th>
+        <th>status</th>
+        <th></th>
+    </tr>
+    
+    <% @upcoming_shifts.each do |shift| %>
+    <tr>
+        <td><%= "#{shift.date.strftime('%-m/%-d/%y')}" %></td>
+        <td><%= "#{shift.start_time.strftime('%H:%M')} - #{shift.end_time.strftime('%H:%M')}" %></td>
+        <td><%= shift.status %></td>
+        <td><%= link_to 'details', shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @upcoming_shifts, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+</div>
+
+<br>
+
+<div style="background-color:white">
+<h4>Past Shifts</h4>
+<% if (@past_shifts).empty? %>
+<h5>There are no past shifts at this time</h5>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>date</th>
+        <th>Time</th>
+        <th>status</th>
+        <th>Notes</th>
+    </tr>
+    
+    <% @past_shifts.each do |shift| %>
+    <tr>
+        <td><%= "#{shift.date.strftime('%-m/%-d/%y')}" %></td>
+        <td><%= "#{shift.start_time.strftime('%H:%M')} - #{shift.end_time.strftime('%H:%M')}" %></td>
+        <td><%= shift.status %></td>
+        <td><%= shift.notes %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @past_shifts, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+
+<br>
+</div>

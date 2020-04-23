@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  before_action :set_job, only: [:show, :edit, :update, :destroy]
+  before_action :set_job, only: [:edit, :update, :destroy]
   before_action :check_login
   authorize_resource
   
@@ -27,6 +27,7 @@ class JobsController < ApplicationController
   end
 
   def show
+      @job = Job.find(params[:id])
   end
 
   def update
@@ -43,7 +44,7 @@ class JobsController < ApplicationController
   end
   
   def destroy
-    unless current_user.role?(:employee)
+    if current_user.role?(:admin)
         @job.destroy
         flash[:notice] = "Job successfully removed."
         redirect_to jobs_url
@@ -52,7 +53,9 @@ class JobsController < ApplicationController
   
   private
   def set_job
-    @job = Job.find(params[:id])
+    if current_user.role?(:admin)  
+        @job = Job.find(params[:id])
+    end
   end
 
   def job_params

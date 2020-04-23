@@ -10,6 +10,7 @@
         <th>Phone Number</th>
         <th></th>
         <th></th>
+        <th></th>
     </tr>
     
     <% @active_managers.each do |employee| %>
@@ -19,6 +20,9 @@
         <td><%= employee.phone.insert(3, '-').insert(7, '-') %></td>
         <td><%= link_to 'Edit' , edit_employee_path(employee), :class=> "waves-effect waves-light btn #001e00" %></td>
         <td><%= link_to 'Assignments' , employee_path(employee), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <% if current_user.role? :admin %> 
+            <td><%= button_to "delete", employee, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
+        <% end %>
     </tr>
     <% end %>
 </table>

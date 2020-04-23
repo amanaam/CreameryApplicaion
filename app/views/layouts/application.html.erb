@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Creamery</title>
-      <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-      <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
@@ -29,7 +29,7 @@
     <div class="col s1">
     </div>
     
-    <div id="main_content" class="col s7">
+    <div id="main_content" class="col s8">
         <br>
         <div class="container">
             <div class="row">
@@ -40,12 +40,13 @@
           <%= yield %>
     </div>
 
-    <div class="col s1">
-    </div>
+
 
     <div class="col s3 center">
     <% if logged_in? %>
-        <%= render partial: 'partials/quick_links' %>
+        <% unless current_user.role? :employee %>
+            <%= render partial: 'partials/quick_links' %>
+        <% end %>
     <% end %><br>
       
     </div>

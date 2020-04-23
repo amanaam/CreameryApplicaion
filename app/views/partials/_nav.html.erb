@@ -11,13 +11,13 @@
               <td><h5><%= link_to 'Pay Grades', pay_grades_path %></h5></td>
               <td><h5><%= link_to 'Pay Rates', pay_grade_rates_path %></h5></td>
           <% elsif current_user.role? :manager %>
+              <td><h5><%= link_to 'Stores', stores_path %></h5></td>
               <td><h5><%= link_to 'Employees', employees_path %></h5></td>
               <td><h5><%= link_to 'Shifts', shifts_path %></h5></td>
               <td><h5><%= link_to 'Jobs', jobs_path %></h5></td>
               <td><h5><%= link_to 'Assignments', assignments_path %></h5></td>
           <% elsif current_user.role? :employee %>
-              <td><h5><%= link_to 'Employees', employee_path(current_user.id) %></h5></td>
-              <td><h5><%= link_to 'Shifts', shift_path(current_user.id) %></h5></td>
+              <td width="90%"><h5><%= link_to 'View My Details', employee_path(current_user.id) %></h5></td>
           <% end %>
       </div>
   </div>
@@ -25,7 +25,7 @@
   </div>
   <div class="col s1">
     <div class="container">
-                <td><h5><%= link_to 'Logout', logout_path %></h5></td>
+                <td width="10%"><h5><%= link_to 'Logout', logout_path %></h5></td>
          </tr></table>
     </div>
   </div>

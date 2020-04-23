@@ -1,5 +1,5 @@
 class EmployeesController < ApplicationController
-  before_action :set_employee, only: [:show, :update]
+  before_action :set_employee, only: [:show, :update, :details]
   before_action :check_login
   authorize_resource 
   def index

@@ -15,6 +15,12 @@ class AssignmentsController < ApplicationController
       @assignment = Assignment.new
   end
   
+  def show
+      @assignment = Assignment.find(params[:id])
+      @upcoming_shifts = Shift.for_employee(@employee).for_next_days(7).chronological.paginate(:page => params[:page]).per_page(5)
+      @past_shifts = Shift.for_employee(@employee).for_past_days(7).chronological.paginate(:page => params[:page]).per_page(5)
+  end
+  
   def create
       @assignment = Assignment.new(assignment_params)
       if @assignment.save

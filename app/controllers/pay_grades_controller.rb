@@ -10,7 +10,9 @@ class PayGradesController < ApplicationController
   end
 
   def new
-      @pay_grade = PayGrade.new
+      if current_user.role?(:admin)
+        @pay_grade = PayGrade.new
+      end
   end
 
   def edit

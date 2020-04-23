@@ -16,34 +16,46 @@ class StoresController < ApplicationController
   end
   
   def new
-      @store = Store.new
+      if current_user.role?(:admin)
+        @store = Store.new
+      end
   end
   
   def create
-      @store = Store.new(store_params)
-      if @store.save
-          redirect_to @store, notice: "Added store information for #{@store.name}."
-      else
-          render action: 'new'
+      if current_user.role?(:admin)
+          @store = Store.new(store_params)
+          if @store.save
+              redirect_to @store, notice: "Added store information for #{@store.name}."
+          else
+              render action: 'new'
+          end
       end
   end
   
   def update
-      if @store.update(store_params)
-          redirect_to @store, notice: "Updated store information for #{@store.name}."
-      else
-          render action: 'edit'
+      if current_user.role?(:admin)
+          if @store.update(store_params)
+              redirect_to @store, notice: "Updated store information for #{@store.name}."
+          else
+              render action: 'edit'
+          end
       end
   end
       
   def show
-      @current_managers = Assignment.current.for_store(@store).for_role('manager').map{|a| a.employee}
-      @current_employees = Assignment.current.for_store(@store).map{|a| a.employee}
+      if current_user.role?(:admin)
+          @current_managers = Assignment.current.for_store(@store).for_role('manager').map{|a| a.employee}
+          @current_employees = Assignment.current.for_store(@store).map{|a| a.employee}
+          @upcoming_shifts = Shift.for_store(@employee).for_next_days(7).chronological.paginate(:page => params[:page]).per_page(5)
+          @past_shifts = Shift.for_store(@employee).for_past_days(7).chronological.paginate(:page => params[:page]).per_page(5)
+      end
   end
   
   private
     def set_store
-      @store = Store.find(params[:id])
+        if current_user.role?(:admin)
+            @store = Store.find(params[:id])
+        end
     end
   
     def store_params

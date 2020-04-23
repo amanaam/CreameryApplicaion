@@ -33,7 +33,8 @@
 <br>
 <br>
 <div style="background-color:white">
-<h5>Current Assignment</h5>
+
+<h4>Current Assignment</h4>
 <% if (@current_assignment == nil) %>
 <h6>n/a</h6>
 <% else %>
@@ -54,10 +55,10 @@
 <br>
 <div style="background-color:white">
 
+<h4>Previous Assignments</h4>
 <% if (@previous_assignments).empty? %>
-<br>
+<h5>There are no Previous Assignments at this time</h5>
 <% else %>
-<h5>Previous Assignments</h5>
 <table class="striped" border = 1>
     <tr>
         <th>Store Name</th>
@@ -87,8 +88,6 @@
         <th>Time</th>
         <th>status</th>
         <th></th>
-        <th></th>
-        <th></th>
     </tr>
     
     <% @upcoming_shifts.each do |shift| %>
@@ -97,8 +96,6 @@
         <td><%= "#{shift.start_time.strftime('%H:%M')} - #{shift.end_time.strftime('%H:%M')}" %></td>
         <td><%= shift.status %></td>
         <td><%= link_to 'details', shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
-        <td><%= link_to 'Edit', edit_shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
-        <td><%= button_to "delete", shift, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
     </tr>
     <% end %>
 </table>
@@ -121,9 +118,7 @@
         <th>date</th>
         <th>Time</th>
         <th>status</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Notes</th>
     </tr>
     
     <% @past_shifts.each do |shift| %>
@@ -131,9 +126,7 @@
         <td><%= "#{shift.date.strftime('%-m/%-d/%y')}" %></td>
         <td><%= "#{shift.start_time.strftime('%H:%M')} - #{shift.end_time.strftime('%H:%M')}" %></td>
         <td><%= shift.status %></td>
-        <td><%= link_to 'details', shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
-        <td><%= link_to 'Edit', edit_shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
-        <td><%= button_to "delete", shift, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
+        <td><%= shift.notes %></td>
     </tr>
     <% end %>
 </table>
@@ -145,10 +138,11 @@
 
 <br>
 </div>
-    
-
 <%= link_to 'Edit', edit_employee_path(@employee) %> |
 <%= link_to 'Back', employees_path %>
+    
+
+
 
 
 
