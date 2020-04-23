@@ -1,2 +1,109 @@
-<h1>Shifts#index</h1>
-<p>Find me in app/views/shifts/index.html.erb</p>
+<div style="background-color:white">
+<h4>Upcoming Shifts</h4>
+<% if (@upcoming_shifts).empty? %>
+<h5>There are no upcoming shifts at this time</h5>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Assignment</th>
+        <th>date</th>
+        <th>Time</th>
+        <th>status</th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @upcoming_shifts.each do |shift| %>
+    <tr>
+        <td><%= link_to shift.assignment.employee.name, employee_path(shift.assignment.employee) %></td>
+        <td><%= "#{shift.date.strftime('%-m/%-d/%y')}" %></td>
+        <td><%= "#{shift.start_time.strftime('%H:%M')} - #{shift.end_time.strftime('%H:%M')}" %></td>
+        <td><%= shift.status %></td>
+        <td><%= link_to 'details', shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= link_to 'Edit', edit_shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= button_to "delete", shift, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @upcoming_shifts, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+</div>
+
+<br>
+
+<div style="background-color:white">
+<h4>Past Shifts</h4>
+<% if (@past_shifts).empty? %>
+<h5>There are no past shifts at this time</h5>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Assignment</th>
+        <th>date</th>
+        <th>Time</th>
+        <th>status</th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @past_shifts.each do |shift| %>
+    <tr>
+        <td><%= link_to shift.assignment.employee.name, employee_path(shift.assignment.employee) %></td>
+        <td><%= "#{shift.date.strftime('%-m/%-d/%y')}" %></td>
+        <td><%= "#{shift.start_time.strftime('%H:%M')} - #{shift.end_time.strftime('%H:%M')}" %></td>
+        <td><%= shift.status %></td>
+        <td><%= link_to 'details', shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= link_to 'Edit', edit_shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= button_to "delete", shift, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @past_shifts, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+
+<br>
+</div>
+
+<div style="background-color:white">
+<h4>Completed Shifts</h4>
+<% if (@completed_shifts).empty? %>
+<h5>There are no upcoming shifts at this time</h5>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Assignment</th>
+        <th>date</th>
+        <th>Time</th>
+        <th>status</th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @completed_shifts.each do |shift| %>
+    <tr>
+        <td><%= link_to shift.assignment.employee.name, employee_path(shift.assignment.employee) %></td>
+        <td><%= "#{shift.date.strftime('%-m/%-d/%y')}" %></td>
+        <td><%= "#{shift.start_time.strftime('%H:%M')} - #{shift.end_time.strftime('%H:%M')}" %></td>
+        <td><%= shift.status %></td>
+        <td><%= link_to 'details', shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= link_to 'Edit', edit_shift_path(shift), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= button_to "delete", shift, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
+    </tr>
+    <% end %>
+</table>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @completed_shifts, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+<% end %>
+</span>
+</div>
+    

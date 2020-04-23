@@ -1,2 +1,21 @@
-<h1>Add Pay Grade Rates</h1>
-<p>Find me in app/views/pay_grade_rates/new.html.erb</p>
+<h4>Add Pay Grade Rates</h4>
+<%= simple_form_for(@pay_grade_rate) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="form-inputs">
+      <%= f.input :pay_grade, collection: PayGrade.alphabetical.active %>
+      <%= f.input :rate, label_html: { class: 'active' } %>
+      <%= f.label :start_date %>
+      <%= f.text_field :start_date, prompt: "Start Date", class: "datepicker", :value => (f.object.start_date.strftime('%B %d, %Y') if f.object.start_date != nil) %>
+      <%= f.label :end_date %>
+      <%= f.text_field :end_date, prompt: "End Date", class: "datepicker", :value => (f.object.end_date.strftime('%B %d, %Y') if f.object.end_date != nil) %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-actions col s8">
+      <%= f.submit :class=>"btn waves-effect waves-light" %>
+      <%= link_to 'Cancel', pay_grade_rates_path, :class => 'waves-effect waves-light btn red' %>
+    </div>
+  </div>
+<% end %>
+            

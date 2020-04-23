@@ -1,2 +1,26 @@
-<h1>PayGrades#index</h1>
-<p>Find me in app/views/pay_grades/index.html.erb</p>
+<div style="background-color:white">
+<h4>Pay Grades</h4>
+<% if (@pay_grades).empty? %>
+<h6>There are no pay grades at this time</h6>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Level</th>
+        <th>Status</th>
+        <th></th>
+    </tr>
+    
+    <% @pay_grades.each do |pay_grade| %>
+    <tr>
+        <td><%= pay_grade.level %></td>
+        <td><%= ( (pay_grade.active)? "Active" : "inactive" ) %></td>
+        <td><%= link_to 'Edit' , edit_pay_grade_path(pay_grade), :class=> "waves-effect waves-light btn #001e00" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @pay_grades, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+</div>

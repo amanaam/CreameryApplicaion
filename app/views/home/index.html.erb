@@ -1,2 +1,9 @@
 <h3>Do you want something sweet?</h3>
 <h5>Welcome to Amazing and Marvelous Creamery. We are the best creamery in town, offering our services 24/7. Doesn't matter if you want icecream, shakes, or coffee, we have everything for you. And dont worry if you are not in the US, we deliver all over the world. Just pick up your phone and we will be at your door step.</h5>
+<br>
+<h5>Our Stores:</h5>
+
+<h5><% @stores.each do |store| %>
+    <%= store.name %>
+    <%= '|' %>
+<% end %></h5>

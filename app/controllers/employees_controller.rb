@@ -1,11 +1,13 @@
 class EmployeesController < ApplicationController
-  before_action :set_employee, only: [:show, :edit, :update, :details]
+  before_action :set_employee, only: [:show, :update]
   before_action :check_login
   authorize_resource 
   def index
-      @active_managers = Employee.managers.active.paginate(:page => params[:page]).per_page(5)
-      @active_employees = Employee.regulars.active.paginate(:page => params[:page]).per_page(5)
-      @inactive_employees = Employee.inactive.paginate(:page => params[:page]).per_page(5)
+      unless current_user.role?(:employee)
+          @active_managers = Employee.managers.active.paginate(:page => params[:page]).per_page(5)
+          @active_employees = Employee.regulars.active.paginate(:page => params[:page]).per_page(5)
+          @inactive_employees = Employee.inactive.paginate(:page => params[:page]).per_page(5)
+      end
   end
   
   def details
@@ -13,32 +15,53 @@ class EmployeesController < ApplicationController
   
 
   def edit
+      if current_user.role?(:admin)
+          @employee = Employee.find(params[:id])
+      end
   end
 
   def new
-      @employee = Employee.new
+      if current_user.role?(:admin)
+        @employee = Employee.new
+      end
   end
   
   def create
-      @employee = Employee.new(employee_params)
-      if @employee.save
-          redirect_to @employee, notice: "Successfully added #{@employee.proper_name} as an employee."
-      else
-          render action: 'new'
+      if current_user.role?(:admin)
+          @employee = Employee.new(employee_params)
+          if @employee.save
+              redirect_to @employee, notice: "Successfully added #{@employee.proper_name} as an employee."
+          else
+              render action: 'new'
+          end
       end
   end
   
   def update
-      if @employee.update(employee_params)
-          redirect_to @employee, notice: "Updated #{@employee.proper_name}'s information."
-      else
-          render action: 'edit'
+      unless current_user.role?(:employee)
+          @employee = Employee.find(params[:id])
+          if @employee.update(employee_params)
+              redirect_to @employee, notice: "Updated #{@employee.proper_name}'s information."
+          else
+              render action: 'edit'
+          end
+      end
+  end
+  
+  def destroy
+      if current_user.role?(:admin)
+          @employee = Employee.find(params[:id])
+          @employee.destroy
+          flash[:notice] = "Removed assignment from the system."
+          redirect_to employees_url
       end
   end
   
   def show
       @current_assignment = @employee.current_assignment
       @previous_assignments = @employee.assignments.to_a - [@current_assignment]
+      @upcoming_shifts = Shift.for_employee(@employee).for_next_days(7).chronological.paginate(:page => params[:page]).per_page(5)
+      @past_shifts = Shift.for_employee(@employee).for_past_days(7).chronological.paginate(:page => params[:page]).per_page(5)
   end
   
   private

@@ -1,2 +1,66 @@
-<h1>Shifts#show</h1>
-<p>Find me in app/views/shifts/show.html.erb</p>
+<h4>Shift Details</h4>
+<table class="striped" border = 1>
+<tr><td>
+  <b>Employee Name:</b></td><td>
+  <%= @shift.assignment.employee.proper_name %>
+</td></tr>
+
+<tr><td>
+  <b>Store:</b></td><td>
+  <%= @shift.assignment.store.name %>
+</td></tr>
+
+<tr><td>
+  <b>Date:</b></td><td>
+  <%= @shift.date.strftime('%-m/%-d/%y') %>
+</td></tr>
+
+<tr><td>
+  <b>Start Time:</b></td><td>
+  <%= @shift.start_time.strftime('%H:%M') %>
+</td></tr>
+
+<tr><td>
+  <b>End Time:</b></td><td>
+  <%= @shift.end_time.strftime('%H:%M') %>
+</td></tr>
+
+<tr><td>
+  <b>Status:</b></td><td>
+  <%= @shift.status %>
+</td></tr>
+</table>
+<br>
+<%= link_to 'Edit', edit_shift_path(@shift), :class=> "waves-effect waves-light btn #001e00"%> |
+<%= link_to 'Back', shifts_path, :class=> "waves-effect waves-light btn #001e00" %>
+
+<div style="background-color:white">
+<h5>Jobs completed during the shift</h5>
+<% if (@jobs).empty? %>
+<h5>There are no Jobs completed at this time</h5>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Name</th>
+        <th>Status</th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @jobs.each do |job| %>
+    <tr>
+        <td><%= job.name %></td>
+        <td><%= if job.active == true; 'Active' else 'Inactive' end %></td>
+        <td><%= link_to 'details', job_path(job), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= link_to 'Edit', edit_job_path(job), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= button_to "delete", job, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @jobs, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+</div>

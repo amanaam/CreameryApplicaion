@@ -5,7 +5,7 @@ class PayGradesController < ApplicationController
   
   def index
     if current_user.role?(:admin)
-        @pay_grades = PayGrade.all.paginate(page: params[:page]).per_page(5)
+        @pay_grades = PayGrade.all.alphabetical.paginate(page: params[:page]).per_page(5)
     end
   end
 

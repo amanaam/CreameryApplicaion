@@ -60,6 +60,7 @@ class Employee < ApplicationRecord
 
   def make_inactive
     self.active = false
+    puts self.active
     self.save!
   end
   
@@ -126,6 +127,7 @@ class Employee < ApplicationRecord
       remove_future_shifts
       return true
     else
+      self.make_inactive
       throw(:abort)   
     end
   end

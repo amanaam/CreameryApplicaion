@@ -1,2 +1,30 @@
-<h1>Jobs#index</h1>
-<p>Find me in app/views/jobs/index.html.erb</p>
+<div style="background-color:white">
+<h4>Jobs</h4>
+<% if (@jobs).empty? %>
+<h5>There are no Jobs at this time</h5>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Name</th>
+        <th>Status</th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <% @jobs.each do |job| %>
+    <tr>
+        <td><%= job.name %></td>
+        <td><%= if job.active == true; 'Active' else 'Inactive' end %></td>
+        <td><%= link_to 'details', job_path(job), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= link_to 'Edit', edit_job_path(job), :class=> "waves-effect waves-light btn #001e00" %></td>
+        <td><%= button_to "delete", job, :method => :delete, :class=> "waves-effect waves-light btn red" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @jobs, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+</div>

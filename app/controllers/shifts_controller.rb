@@ -1,5 +1,5 @@
 class ShiftsController < ApplicationController
-  before_action :set_shift, only: [:show, :edit, :update]
+  before_action :set_shift, only: [:show, :edit, :update, :destroy]
   before_action :check_login
   authorize_resource
   
@@ -34,8 +34,7 @@ class ShiftsController < ApplicationController
 
   def show
       unless current_user.role?(:employee)
-          @shifts = @assignment.employee.shifts.paginate(page: params[:page]).per_page(5)
-          @jobs = @shift.shift_jobs
+          @jobs = @shift.jobs.paginate(page: params[:page]).per_page(5)
       end
   end
 
@@ -55,7 +54,7 @@ class ShiftsController < ApplicationController
   def destroy
     unless current_user.role?(:employee)
         @shift.destroy
-        redirect_to :back, notice: "Shift successfully removed."
+        redirect_to shifts_path, notice: "Shift successfully removed."
     end
   end
   

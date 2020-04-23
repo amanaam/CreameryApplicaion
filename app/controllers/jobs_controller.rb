@@ -45,16 +45,17 @@ class JobsController < ApplicationController
   def destroy
     unless current_user.role?(:employee)
         @job.destroy
-        redirect_to :back, notice: "Shift successfully removed."
+        flash[:notice] = "Job successfully removed."
+        redirect_to jobs_url
     end
   end
   
   private
-  def set_shift
+  def set_job
     @job = Job.find(params[:id])
   end
 
-  def shift_params
+  def job_params
     params.require(:job).permit(:name, :description, :active)
   end
 end

@@ -1,2 +1,26 @@
-<h1>PayGradeRates#index</h1>
-<p>Find me in app/views/pay_grade_rates/index.html.erb</p>
+<div style="background-color:white">
+<h4>Pay Rates</h4>
+<% if (@pay_grade_rates).empty? %>
+<h6>There are no pay rates at this time</h6>
+<% else %>
+<table class="striped" border = 1>
+    <tr>
+        <th>Level</th>
+        <th>Rate</th>
+        <th>Dates</th>
+    </tr>
+    
+    <% @pay_grade_rates.each do |pay_grade_rate| %>
+    <tr>
+        <td><%= pay_grade_rate.pay_grade.level %></td>
+        <td><%= pay_grade_rate.rate %></td>
+        <td><%= "#{pay_grade_rate.start_date.strftime('%-m/%-d/%y')} - #{ if pay_grade_rate.end_date.nil?; 'present' else pay_grade_rate.end_date.strftime('%-m/%-d/%y') end}" %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+<!-- Add the pagination using will_paginate gem -->
+<span class="paginate">
+<%= will_paginate @pay_grades, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+</span>
+</div>

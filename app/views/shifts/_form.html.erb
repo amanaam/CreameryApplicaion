@@ -2,7 +2,7 @@
   <%= f.error_notification %>
   <div class="row">
     <div class="form-inputs">
-      <%= f.input :assignment_id, collection: Assignment.chronological.current %>
+      <%= f.input :assignment_id, collection: Assignment.chronological.current.by_employee, :label_method => lambda { |n| "#{n.employee.name}"} %>
       <%= f.label :date %><br />
       <%= f.text_field :date, prompt: "Date", class: "datepicker", :value => (f.object.date.strftime('%B %d, %Y') if f.object.date != nil) %>
       <%= f.label :start_time %><br>

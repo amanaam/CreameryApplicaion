@@ -3,7 +3,7 @@ class AddDefaultEmployee < ActiveRecord::Migration[5.2]
     admin = Employee.new
     admin.first_name = "Admin"
     admin.last_name = "Admin"
-    admin.ssn = "123456789"
+    admin.ssn = "999847875"
     admin.date_of_birth = 19.years.ago.to_date
     admin.password = "secret"
     admin.password_confirmation = "secret"

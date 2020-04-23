@@ -1,0 +1,18 @@
+<h5>Add Job to a Shift</h5>
+<%= simple_form_for(@shift_job) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="form-inputs">
+      <%= f.input :shift_id, collection: Shift.chronological.past.by_employee, :label_method => lambda { |n| "#{n.employee.name}"} %>
+      <%= f.input :job_id, collection: Job.alphabetical.active %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-actions col s8">
+      <%= f.submit :class=>"btn waves-effect waves-light" %>
+      <%= link_to 'Cancel', shifts_path, :class => 'waves-effect waves-light btn red' %>
+    </div>
+  </div>
+<% end %>
+            
+            

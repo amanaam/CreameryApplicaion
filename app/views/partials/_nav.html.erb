@@ -2,11 +2,23 @@
   <div class="col s8">
       <div class="container">
         <table align="right"><tr>
-          <td><h5><%= link_to 'Stores', stores_path %></h5></td>
-          <td><h5><%= link_to 'Employees', employees_path %></h5></td>
-          <td><h5><%= link_to 'Shifts', shifts_path %></h5></td>
-          <td><h5><%= link_to 'Jobs', jobs_path %></h5></td>
-          <td><h5><%= link_to 'Assignments', assignments_path %></h5></td>
+          <% if current_user.role? :admin %>
+              <td><h5><%= link_to 'Stores', stores_path %></h5></td>
+              <td><h5><%= link_to 'Employees', employees_path %></h5></td>
+              <td><h5><%= link_to 'Shifts', shifts_path %></h5></td>
+              <td><h5><%= link_to 'Jobs', jobs_path %></h5></td>
+              <td><h5><%= link_to 'Assignments', assignments_path %></h5></td>
+              <td><h5><%= link_to 'Pay Grades', pay_grades_path %></h5></td>
+              <td><h5><%= link_to 'Pay Rates', pay_grade_rates_path %></h5></td>
+          <% elsif current_user.role? :manager %>
+              <td><h5><%= link_to 'Employees', employees_path %></h5></td>
+              <td><h5><%= link_to 'Shifts', shifts_path %></h5></td>
+              <td><h5><%= link_to 'Jobs', jobs_path %></h5></td>
+              <td><h5><%= link_to 'Assignments', assignments_path %></h5></td>
+          <% elsif current_user.role? :employee %>
+              <td><h5><%= link_to 'Employees', employee_path(current_user.id) %></h5></td>
+              <td><h5><%= link_to 'Shifts', shift_path(current_user.id) %></h5></td>
+          <% end %>
       </div>
   </div>
   <div class="col s3">

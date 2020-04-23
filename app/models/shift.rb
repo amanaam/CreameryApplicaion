@@ -40,7 +40,7 @@ class Shift < ApplicationRecord
   end
   
   def duration
-    ((self.end_time - self.start_time)*4/3600).round/4
+    (round_minutes(self.end_time) - round_minutes(self.start_time))/3600
   end
     
   
